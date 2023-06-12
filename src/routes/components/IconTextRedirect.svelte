@@ -28,11 +28,11 @@
     role="button" 
     on:click={onClick} 
     on:keydown={onKeyDown}
-    class="flex flex-row items-center text-white m-3 p-4 shadow-lg bg-bg-secondary bg-opacity-40"
+    class="flex flex-row items-center text-white m-3 p-4 shadow-lg bg-bg-secondary"
 >
     <Icon class="w-10 h-10" icon={icon} color="white"/>
     <span class="text-2xl ml-5">{text}</span>
     {#if !isUrl}
-        <Icon class="w-10 h-10 ml-auto" icon="ph:copy" color="rgba(0,0,0,0.2)"/>
+        <Icon class="w-10 h-10 ml-auto" icon="ph:copy" color="rgba(105, 109, 118, 0.5)"/>
     {/if}
 </div>
