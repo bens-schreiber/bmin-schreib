@@ -6,14 +6,9 @@
 
     const isUrl: Boolean = redirect.startsWith('http');
 
-    // If redirect is not a URL, copy it to the clipboard and notify the user it was copied
+    // If redirect is not a URL, use a mailto link
     function onClick() {
-        if (!isUrl) {
-            navigator.clipboard.writeText(redirect);
-            alert('Copied to clipboard!');
-            return;
-        }
-        window.open(redirect, '_blank');
+        window.open( !isUrl ? "mailto:" + redirect : redirect, '_blank');
     }
 
     function onKeyDown(event: KeyboardEvent) {
@@ -32,7 +27,4 @@
 >
     <Icon class="w-10 h-10" icon={icon} color="white"/>
     <span class="text-2xl ml-5">{text}</span>
-    {#if !isUrl}
-        <Icon class="w-10 h-10 ml-auto" icon="ph:copy" color="rgba(105, 109, 118, 0.5)"/>
-    {/if}
 </div>
