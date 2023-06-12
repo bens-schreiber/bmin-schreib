@@ -8,9 +8,9 @@
     import "../styles/tailwind.css";
 </script>
 
-<style global>
+<style global lang="postcss">
     :global(body) {
-        background-color: #282c34;
+        background-color: theme("colors.bg-primary");
     }
 </style>
 

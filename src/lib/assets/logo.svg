@@ -7,7 +7,7 @@
       }
 
       .screen {
-        fill: #282c34;
+        fill: #21252a;
         stroke: #2f333d;
         stroke-width: 5px;
       }
@@ -21,7 +21,7 @@
       }
 
       .schreib-text-background {
-        fill: #21252a;
+        fill: #282c34;
         stroke: #696d76;
         stroke-width: 3px;
       }
