@@ -1,6 +1,9 @@
 <script>
+	import CornerIcon from './components/CornerIcon.svelte';
 	import IconTextRedirect from './components/IconTextRedirect.svelte';
 </script>
+
+<CornerIcon/>
 
 <img
 	height="500"
