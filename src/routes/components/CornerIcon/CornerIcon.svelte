@@ -4,17 +4,12 @@
 
 	$: clicked = false;
 
-	function waitOneSecond(): Promise<void> {
-		return new Promise((resolve) => {
-			setTimeout(() => {
-				resolve();
-			}, 1000);
-		});
-	}
-
 	async function onClick() {
 		clicked = true;
-		await waitOneSecond();
+		await new Promise(resolve => {
+			setTimeout(resolve, 1000)
+		});
+		
 		window.location.href = "resume";
 	}
 </script>
