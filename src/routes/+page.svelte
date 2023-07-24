@@ -1,5 +1,5 @@
 <script>
-	import CornerIcon from './components/CornerIcon.svelte';
+	import CornerIcon from './components/CornerIcon/CornerIcon.svelte';
 	import IconTextRedirect from './components/IconTextRedirect.svelte';
 </script>
 

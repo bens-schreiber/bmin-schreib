@@ -1,8 +1,5 @@
 <!-- HTML is dumb and makes me inline this svg or else onClick is a nightmare -->
-
-<div class="absolute top-0 right-0 h-32">
-	<a href="resume">
-		<svg
+<svg
 		class="h-full"
 		id="eIuMO2bHDZj1"
 		xmlns="http://www.w3.org/2000/svg"
@@ -13,40 +10,40 @@
 	>
 		<style>
 			#eIuMO2bHDZj2_to {
-				animation: eIuMO2bHDZj2_to__to 2000ms linear 1 normal forwards;
+				animation: eIuMO2bHDZj2_to__to 1000ms linear 1 normal forwards;
 			}
 			@keyframes eIuMO2bHDZj2_to__to {
-				0% {
+				100% {
 					transform: translate(122.879999px, -0.000001px);
 					animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
 				}
 				50% {
 					transform: translate(61.439999px, 61.435001px);
 				}
-				100% {
+				0% {
 					transform: translate(61.439999px, 61.435001px);
 				}
 			}
 			#eIuMO2bHDZj4_to {
-				animation: eIuMO2bHDZj4_to__to 2000ms linear 1 normal forwards;
+				animation: eIuMO2bHDZj4_to__to 1000ms linear 1 normal forwards;
 			}
 			@keyframes eIuMO2bHDZj4_to__to {
-				0% {
+				100% {
 					transform: translate(110.458246px, -34.295433px);
 					animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
 				}
 				50% {
 					transform: translate(49.280208px, 27.089313px);
 				}
-				100% {
+				0% {
 					transform: translate(49.280208px, 27.089313px);
 				}
 			}
 			#eIuMO2bHDZj6 {
-				animation: eIuMO2bHDZj6__sz 2000ms linear 1 normal forwards;
+				animation: eIuMO2bHDZj6__sz 1000ms linear 1 normal forwards;
 			}
 			@keyframes eIuMO2bHDZj6__sz {
-				0% {
+				100% {
 					width: 1.763733px;
 					height: 5.580372px;
 				}
@@ -55,7 +52,7 @@
 					height: 5.580372px;
 					animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
 				}
-				100% {
+				0% {
 					width: 109.00328px;
 					height: 5.580372px;
 				}
@@ -105,5 +102,3 @@
 			}
 		</style>
 	</svg>
-	</a>
-</div>
