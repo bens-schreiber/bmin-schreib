@@ -120,7 +120,7 @@
       <polygon id="blink" class="schreib-text" points="125.11 77.04 115.04 82.77 114.73 56.97 124.78 51.24 125.11 77.04">
       <animate
         attributeName="fill"
-        values="#e6f6eb;transparent"
+        values="#fff;transparent"
         begin="0s"
         dur="2s"
         calcMode="discrete"
