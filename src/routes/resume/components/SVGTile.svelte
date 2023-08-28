@@ -6,7 +6,7 @@
 </script>
 
 <div
-	class="flex flex-col items-center justify-center m-3 p-4 shadow-lg bg-bg-secondary text-white text-center"
+	class="flex flex-col items-center justify-center m-3 p-4 shadow-lg text-white text-center"
 >
 	<img class="h-{customHeight}" alt="" src={svg} />
 	<h1 class="text-xl mt-5 font-bold">{heading}</h1>

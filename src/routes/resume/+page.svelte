@@ -1,7 +1,7 @@
 <script>
-	import Icon from '@iconify/svelte';
 	import SVGTile from './components/SVGTile.svelte';
 	import LogoIconifyTile from './components/LogoIconifyTile.svelte';
+	import CornerIcon from '../home/components/CornerIcon/CornerIcon.svelte';
 </script>
 
 <h1 class="font-black text-white text-5xl text-center mt-5">BENJAMIN SCHREIBER</h1>
@@ -35,7 +35,7 @@
 
 	<LogoIconifyTile heading="Java" subheading="JavaFX, JettyServer, Gradle" icon="logos:java" />
 
-	<LogoIconifyTile heading="Golang" subheading="Gin, Gorm, Golang-Migrate" icon="devicon:go" />
+	<LogoIconifyTile heading="Golang" subheading="Gin, GORM" icon="devicon:go" />
 
 	<span class="col-span-2">
 		<LogoIconifyTile
@@ -90,13 +90,6 @@
 
 <SVGTile
 	svg="src/lib/assets/FBLA.png"
-	heading="Washington State Champion"
-	subheading="Coding and Programming 2021"
-	customHeight={30}
-/>
-
-<SVGTile
-	svg="src/lib/assets/FBLA.png"
 	heading="3rd in the United States"
 	subheading="Coding and Programming 2021"
 	customHeight={30}
@@ -104,7 +97,14 @@
 
 <SVGTile
 	svg="src/lib/assets/FBLA.png"
-	heading="State Champion"
+	heading="Washington State Champion"
+	subheading="Coding and Programming 2021"
+	customHeight={30}
+/>
+
+<SVGTile
+	svg="src/lib/assets/FBLA.png"
+	heading="Washington State Champion"
 	subheading="Website Design 2022"
 	customHeight={30}
 />
