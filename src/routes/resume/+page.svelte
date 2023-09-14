@@ -16,7 +16,7 @@
 <SVGTile
 	svg="src/lib/assets/washington-state-cougars.svg"
 	heading="Washington State University"
-	subheading="Computer Science - Graduating 2026"
+	subheading="BS Computer Science - Graduating 2026"
 />
 
 <!-- PROGRAMMING LANGUAGES -->
@@ -30,7 +30,7 @@
 		icon="logos:dart"
 	/>
 
-	<LogoIconifyTile heading="Python" subheading="Django, PyMongo (w/ MongoDB)" icon="logos:python" />
+	<LogoIconifyTile heading="Python" subheading="Django, Djongo (MongoDB)" icon="logos:python" />
 
 	<LogoIconifyTile heading="C#" subheading="ASP.NET Suite (w/ SQL)" icon="devicon:csharp" />
 
@@ -75,7 +75,11 @@
 	/>
 
 	<span class="col-span-2"
-		><LogoIconifyTile heading="Swagger" subheading="API Documentation, OAuth2" icon="logos:swagger" /></span
+		><LogoIconifyTile
+			heading="Swagger"
+			subheading="API Documentation, OAuth2"
+			icon="logos:swagger"
+		/></span
 	>
 </div>
 
@@ -86,7 +90,7 @@
 <SVGTile
 	svg="src/lib/assets/COA.png"
 	heading="Triangle STEM Fraternity"
-	subheading="2023 Vice President and Chapter Founder"
+	subheading="2023 Chapter Founder and Vice President"
 	customHeight={30}
 />
 
