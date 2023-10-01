@@ -1,18 +1,15 @@
-<!-- 
-    layout that applies itself to everything within the same
-    directory. This is where you can add global styles, scripts, etc.
-
-    <slot /> is where the content of the page will be injected
--->
 <script>
 	import '../styles/tailwind.css';
 	import { onMount } from 'svelte';
+	import NavBar from './components/NavBar.svelte';
 
 	onMount(() => {
 		document.title = 'Benjamin Schreiber';
 	});
 </script>
 
+
+<NavBar/>
 <slot />
 
 <style global lang="postcss">
