@@ -51,7 +51,7 @@
 
 <PortfolioProjectHeader
 	title="IntelliTerm"
-	description="IntelliTect Hackathon"
+	description="IntelliTect Internal Hackathon"
 	projectType="Website"
 	icon="teenyicons:terminal-solid"
 	bg="bg-neutral-900"
@@ -63,7 +63,7 @@
 </PortfolioProjectHeader>
 
 <PortfolioProjectHeader
-	title="Raylib Sims"
+	title="Raylib Projects"
 	description="Calculus / Physics Simulators"
 	projectType="Desktop Software"
 	img="src/lib/assets/raylib-logo.png"
