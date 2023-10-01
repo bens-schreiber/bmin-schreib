@@ -41,7 +41,7 @@
 
 	<LogoIconifyTile heading="Java" subheading="JavaFX, JettyServer, Gradle" icon="logos:java" />
 
-	<LogoIconifyTile heading="Golang" subheading="Gin, GORM" icon="devicon:go" />
+	<LogoIconifyTile heading="Golang" subheading="Gin, GORM" icon="skill-icons:golang" />
 
 	<span class="col-span-2">
 		<LogoIconifyTile
