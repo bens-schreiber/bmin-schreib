@@ -1,5 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
+	import Tile from './Tile.svelte';
+	import { fly } from 'svelte/transition';
 	export let title: string;
 	export let description: string;
 	export let projectType: string;
@@ -8,10 +10,10 @@
 	export let customHeight: number = 20;
 	export let bg: string;
 	export let marginTop: boolean = true;
+	$: expanded = false;
 </script>
 
-<div class="shadow-lg p-4 m-1">
-
+<Tile>
 	<!--  IMAGE OR ICON -->
 	<div
 		class="relative h-16 mx-3 {marginTop
@@ -40,6 +42,30 @@
 
 	<!--  CLICK TO EXPAND BUTTON -->
 	<div class="flex items-center justify-center mt-8 w-30">
-		<button class="bg-bg-accent text-white py-2 px-4 rounded"> Click to Expand </button>
+		<button
+			class="bg-bg-accent text-white py-2 px-4 rounded"
+			on:click={() => {
+				expanded = !expanded;
+			}}
+		>
+			{expanded ? 'Click to Hide' : 'Click to Expand'}
+		</button>
 	</div>
-</div>
+</Tile>
+
+<!--  EXPANDED CONTENT -->
+{#if expanded}
+	<slot name="expanded" />
+
+	<!--  CLICK TO EXPAND BUTTON -->
+	<div class="flex items-center justify-center mt-8 w-30">
+		<button
+			class="bg-bg-accent text-white py-2 px-4 rounded"
+			on:click={() => {
+				expanded = !expanded;
+			}}
+		>
+			{expanded ? 'Click to Hide' : 'Click to Expand'}
+		</button>
+	</div>
+{/if}
