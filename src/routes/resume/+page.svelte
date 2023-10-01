@@ -7,7 +7,7 @@
 <FloatingDownloadButton />
 
 <!-- WORK EXPERIENCE-->
-<h1 class="font-black text-white text-5xl text-center mt-5">BENJAMIN SCHREIBER</h1>
+<h1 class="font-black text-white text-5xl text-center mt-5">TECHNICAL RESUME</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
 <SVGTile
