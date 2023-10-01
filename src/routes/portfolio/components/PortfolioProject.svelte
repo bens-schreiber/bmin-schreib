@@ -10,6 +10,7 @@
 	export let customHeight: number = 20;
 	export let bg: string;
 	export let marginTop: boolean = true;
+	export let href: string | undefined = undefined;
 	$: expanded = false;
 </script>
 
@@ -38,6 +39,17 @@
 		<h1 class="text-4xl text-white text-center font-bold">{title}</h1>
 		<h2 class="text-2xl text-white text-center">{description}</h2>
 		<h3 class="text-xl text-white text-center font-light">{projectType}</h3>
+		{#if href}
+			<a
+				{href}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="flex items-center justify-center space-x-2 mt-8 text-white underline"
+			>
+				<Icon icon="akar-icons:github-fill" class="text-2xl text-white" />
+				<span class="text-white">View on Github</span>
+			</a>
+		{/if}
 	</div>
 
 	<!--  CLICK TO EXPAND BUTTON -->
