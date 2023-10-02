@@ -1,10 +1,12 @@
 <script lang="ts">
   import Icon from '@iconify/svelte';
 
+  const pdfUrl = new URL('/src/lib/assets/BenjaminSchreiberResume.pdf', import.meta.url).href;
+
   // Function to download a pdf from lib/assets
     const downloadPDF = () => {
         const link = document.createElement('a');
-        link.href = 'src/lib/assets/BenjaminSchreiberResume.pdf';
+        link.href = pdfUrl;
         link.download = 'BenjaminSchreiberResume.pdf';
         document.body.appendChild(link);
         link.click();

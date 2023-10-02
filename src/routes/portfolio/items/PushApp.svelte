@@ -9,7 +9,7 @@
 	title="PushApp"
 	description="Fitness Passion Project"
 	projectType="Mobile App"
-	img="src/lib/assets/puapp-logo.png"
+	img={logoUrl}
 	bg="bg-orange-400"
 	href="https://github.com/bens-schreiber/pushapp-2023"
 >
