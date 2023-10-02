@@ -15,19 +15,13 @@
 <h1 class="font-black text-white text-5xl text-center mt-5">EXPERIENCE</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<SVGTile
-	svg={intellitectUrl}
-	heading="Software Developer Intern"
-	subheading="06/2022 - 10/2023"
-	customHeight={48}
-/>
+<SVGTile heading="Software Developer Intern" subheading="06/2022 - 10/2023">
+	<img src={intellitectUrl} alt="IntelliTect logo" class="h-32" />
+</SVGTile>
 
-<SVGTile
-	svg={wsuUrl}
-	heading="Washington State University"
-	subheading="BS Computer Science - Graduating 2026"
-	customHeight={20}
-/>
+<SVGTile heading="Washington State University" subheading="BS Computer Science - Graduating 2026">
+	<img src={wsuUrl} alt="WSU logo" class="h-32" />
+</SVGTile>
 
 <!-- PROGRAMMING LANGUAGES -->
 <h1 class="font-black text-white text-5xl text-center mt-12">LANGUAGES</h1>
@@ -103,37 +97,22 @@
 <h1 class="font-black text-white text-5xl text-center mt-12">ACCOLADES</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<SVGTile
-	svg={coaUrl}
-	heading="Triangle STEM Fraternity"
-	subheading="WSU Chapter Founder and Vice President"
-	customHeight={72}
-/>
+<SVGTile heading="Triangle STEM Fraternity" subheading="WSU Chapter Founder and Vice President">
+	<img src={coaUrl} alt="COA logo" class="h-72" />
+</SVGTile>
 
-<SVGTile
-	svg={fblaUrl}
-	heading="3rd in the United States"
-	subheading="Coding and Programming 2021"
-	customHeight={72}
-/>
+<SVGTile heading="3rd in the United States" subheading="Coding and Programming 2021">
+	<img src={fblaUrl} alt="FBLA logo" class="h-72" />
+</SVGTile>
 
-<SVGTile
-	svg={fblaUrl}
-	heading="Washington State Champion"
-	subheading="Coding and Programming 2021"
-	customHeight={72}
-/>
+<SVGTile heading="Washington State Champion" subheading="Coding and Programming 2021">
+	<img src={fblaUrl} alt="FBLA logo" class="h-72" />
+</SVGTile>
 
-<SVGTile
-	svg={fblaUrl}
-	heading="Washington State Champion"
-	subheading="Website Design 2022"
-	customHeight={72}
-/>
+<SVGTile heading="Washington State Champion" subheading="Website Design 2022">
+	<img src={fblaUrl} alt="FBLA logo" class="h-72" />
+</SVGTile>
 
-<SVGTile
-	svg={intellitectUrl}
-	heading="IntelliTect Scholar"
-	subheading="2022 Overall Winner"
-	customHeight={48}
-/>
+<SVGTile heading="IntelliTect Scholar" subheading="2022 Overall Winner">
+	<img src={intellitectUrl} alt="IntelliTect logo" class="h-32" />
+</SVGTile>
