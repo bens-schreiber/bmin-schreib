@@ -1,10 +1,11 @@
 <script>
 	import IconTextRedirect from './IconTextRedirect.svelte';
+	const logoUrl = new URL('/src/lib/assets/logo.svg', import.meta.url).href;
 </script>
 
 <img
 	class="m-5 md:-mb-5 md:h-96"
-	src="src/lib/assets/logo.svg"
+	src={logoUrl}
 	alt="Logo"
 />
 <IconTextRedirect
