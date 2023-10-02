@@ -11,7 +11,6 @@
 	projectType="Mobile App"
 	img={logoUrl}
 	bg="bg-neutral-700"
-	marginTop={false}
 >
 	<Icon icon="logos:flutter" class="text-4xl text-white" />
 	<Icon icon="logos:webrtc" class="text-4xl text-white" />

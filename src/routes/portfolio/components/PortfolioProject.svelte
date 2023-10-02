@@ -9,7 +9,6 @@
 	export let icon: string | undefined = undefined;
 	export let customHeight: number = 20;
 	export let bg: string;
-	export let marginTop: boolean = true;
 	export let href: string | undefined = undefined;
 	$: expanded = false;
 </script>
@@ -17,9 +16,7 @@
 <Tile>
 	<!--  IMAGE OR ICON -->
 	<div
-		class="relative h-16 mx-3 {marginTop
-			? 'mt-8'
-			: ''} rounded flex items-center justify-center {bg}"
+		class="relative h-16 mx-3 rounded flex items-center justify-center {bg}"
 	>
 		{#if icon}
 			<Icon {icon} class="text-8xl text-white" />
@@ -81,3 +78,5 @@
 		</button>
 	</div>
 {/if}
+
+<div class="m-28"/>

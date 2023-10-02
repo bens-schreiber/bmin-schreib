@@ -3,12 +3,12 @@
 
 	$: contactSelected = false;
 	$: resumeSelected = false;
-	$: workSelected = false;
+	$: portfolioSelected = false;
 
 	$: {
 		contactSelected = $page.url.pathname === '/contact';
 		resumeSelected = $page.url.pathname === '/resume';
-		workSelected = $page.url.pathname === '/portfolio';
+		portfolioSelected = $page.url.pathname === '/portfolio';
 	}
 
 	function bgColor(selected: boolean): string {
@@ -35,8 +35,8 @@
 	</a>
 	<a
 		href="portfolio"
-		class="{bgColor(workSelected)} grow px-8 py-3 text-center text-white font-medium text-sm"
+		class="{bgColor(portfolioSelected)} grow px-8 py-3 text-center text-white font-medium text-sm"
 	>
-		WORK
+		PORTFOLIO
 	</a>
 </nav>
