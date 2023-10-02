@@ -21,7 +21,7 @@
 		href="contact"
 		class=" {bgColor(
 			contactSelected
-		)} md:hidden grow px-8 py-3 border-r border-r-slate-900 text-center text-white font-medium text-sm"
+		)} md:hidden grow px-8 py-3 border-r-[1px] border-r-slate-500 text-center text-white font-medium text-sm"
 	>
 		CONTACT
 	</a>
@@ -29,7 +29,7 @@
 		href="resume"
 		class="{bgColor(
 			resumeSelected
-		)} grow px-8 py-3 border-r border-r-slate-900 text-center text-white font-medium text-sm"
+		)} grow px-8 py-3 border-r-[1px] border-r-slate-500 text-center text-white font-medium text-sm"
 	>
 		RESUME
 	</a>
