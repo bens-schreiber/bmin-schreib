@@ -15,13 +15,15 @@
 <h1 class="font-black text-white text-5xl text-center mt-5">EXPERIENCE</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<SVGTile heading="Software Developer Intern" subheading="06/2022 - 10/2023">
-	<img src={intellitectUrl} alt="IntelliTect logo" class="h-32" />
-</SVGTile>
+<div class="md:grid md:grid-cols-2">
+	<SVGTile heading="Software Developer Intern" subheading="06/2022 - 10/2023">
+		<img src={intellitectUrl} alt="IntelliTect logo" class="h-24" />
+	</SVGTile>
 
-<SVGTile heading="Washington State University" subheading="BS Computer Science - Graduating 2026">
-	<img src={wsuUrl} alt="WSU logo" class="h-32" />
-</SVGTile>
+	<SVGTile heading="Washington State University" subheading="BS Computer Science - Graduating 2026">
+		<img src={wsuUrl} alt="WSU logo" class="h-32" />
+	</SVGTile>
+</div>
 
 <!-- PROGRAMMING LANGUAGES -->
 <h1 class="font-black text-white text-5xl text-center mt-12">LANGUAGES</h1>
@@ -97,22 +99,26 @@
 <h1 class="font-black text-white text-5xl text-center mt-12">ACCOLADES</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<SVGTile heading="Triangle STEM Fraternity" subheading="WSU Chapter Founder and Vice President">
-	<img src={coaUrl} alt="COA logo" class="h-72" />
-</SVGTile>
+<div class="md:grid md:grid-cols-2">
+	<span class="col-span-2">
+		<SVGTile heading="3rd in the United States" subheading="Coding and Programming 2021">
+			<img src={fblaUrl} alt="FBLA logo" class="h-72" />
+		</SVGTile>
+	</span>
 
-<SVGTile heading="3rd in the United States" subheading="Coding and Programming 2021">
-	<img src={fblaUrl} alt="FBLA logo" class="h-72" />
-</SVGTile>
+	<SVGTile heading="Triangle STEM Fraternity" subheading="WSU Chapter Founder and Vice President">
+		<img src={coaUrl} alt="COA logo" class="h-72" />
+	</SVGTile>
 
-<SVGTile heading="Washington State Champion" subheading="Coding and Programming 2021">
-	<img src={fblaUrl} alt="FBLA logo" class="h-72" />
-</SVGTile>
+	<SVGTile heading="Washington State Champion" subheading="Coding and Programming 2021">
+		<img src={fblaUrl} alt="FBLA logo" class="h-72" />
+	</SVGTile>
 
-<SVGTile heading="Washington State Champion" subheading="Website Design 2022">
-	<img src={fblaUrl} alt="FBLA logo" class="h-72" />
-</SVGTile>
+	<SVGTile heading="Washington State Champion" subheading="Website Design 2022">
+		<img src={fblaUrl} alt="FBLA logo" class="h-72" />
+	</SVGTile>
 
-<SVGTile heading="IntelliTect Scholar" subheading="2022 Overall Winner">
-	<img src={intellitectUrl} alt="IntelliTect logo" class="h-32" />
-</SVGTile>
+	<SVGTile heading="IntelliTect Scholar" subheading="2022 Overall Winner">
+		<img src={intellitectUrl} alt="IntelliTect logo" class="h-24" />
+	</SVGTile>
+</div>
