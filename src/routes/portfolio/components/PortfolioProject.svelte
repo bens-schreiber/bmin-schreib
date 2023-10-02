@@ -16,6 +16,7 @@
 <Tile>
 	<!--  IMAGE OR ICON -->
 	<div
+		id={title}
 		class="relative h-16 mx-3 rounded flex items-center justify-center {bg}"
 	>
 		{#if icon}
@@ -64,7 +65,9 @@
 
 <!--  EXPANDED CONTENT -->
 {#if expanded}
-	<slot name="expanded" />
+	<div transition:fly="{{ y: -100, duration: 300 }}">
+		<slot name="expanded" />
+	</div>
 
 	<!--  CLICK TO EXPAND BUTTON -->
 	<div class="flex items-center justify-center mt-8 w-30">
@@ -72,6 +75,8 @@
 			class="bg-bg-accent text-white py-2 px-4 rounded"
 			on:click={() => {
 				expanded = !expanded;
+				const element = document.getElementById("my-element");
+				element?.scrollIntoView({ behavior: "smooth" });
 			}}
 		>
 			{expanded ? 'Click to Hide' : 'Click to Expand'}
