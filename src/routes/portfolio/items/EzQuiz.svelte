@@ -1,9 +1,8 @@
 <script>
-    import Tile from '../components/Tile.svelte';
-    import Icon from '@iconify/svelte';
-    import PortfolioProject from '../components/PortfolioProject.svelte';
+	import Tile from '../components/Tile.svelte';
+	import Icon from '@iconify/svelte';
+	import PortfolioProject from '../components/PortfolioProject.svelte';
 </script>
-
 
 <PortfolioProject
 	title="EzQuiz"
@@ -18,8 +17,8 @@
 	<Icon icon="logos:mysql" class="text-4xl text-white" />
 	<Icon icon="logos:docker-icon" class="text-4xl text-white" />
 	<Icon icon="logos:google-cloud" class="text-4xl text-white" />
-	<div slot="expanded">
-		<Tile class="mt-10 pb-10">
+	<div slot="expanded" class="md:grid md:grid-cols-2">
+		<Tile class="mt-10 pb-10 md:col-span-2">
 			<h1 class="text-4xl text-white font-bold">About</h1>
 			<div class="border-t border-gray-300 my-3" />
 			<p class="text-white text-xl leading-loose">
@@ -56,25 +55,27 @@
 				back end.
 			</p>
 		</Tile>
-		<Tile>
+		<Tile class="md:col-span-2">
 			<h1 class="text-4xl text-white font-bold">Demos</h1>
 			<div class="border-t border-gray-300 my-3" />
-			<video
-				class="w-full"
-				controls
-				poster="src/lib/assets/ezquiz-logo.png"
-				src="src/lib/assets/ezquiz-demo2.mp4"
-			>
-				<track kind="captions" srclang="en" label="English" />
-			</video>
-			<video
-				class="w-full mt-5"
-				controls
-				poster="src/lib/assets/ezquiz-logo.png"
-				src="src/lib/assets/ezquiz-demo1.mp4"
-			>
-				<track kind="captions" srclang="en" label="English" />
-			</video>
+			<div class="md:grid md:grid-cols-2 md:gap-10">
+				<video
+					class="w-full"
+					controls
+					poster="src/lib/assets/ezquiz-logo.png"
+					src="src/lib/assets/ezquiz-demo2.mp4"
+				>
+					<track kind="captions" srclang="en" label="English" />
+				</video>
+				<video
+					class="w-full mt-5"
+					controls
+					poster="src/lib/assets/ezquiz-logo.png"
+					src="src/lib/assets/ezquiz-demo1.mp4"
+				>
+					<track kind="captions" srclang="en" label="English" />
+				</video>
+			</div>
 		</Tile>
 	</div>
 </PortfolioProject>

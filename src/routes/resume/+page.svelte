@@ -7,26 +7,28 @@
 <FloatingDownloadButton />
 
 <!-- WORK EXPERIENCE-->
-<h1 class="font-black text-white text-5xl text-center mt-5">TECHNICAL RESUME</h1>
+<h1 class="font-black text-white text-5xl text-center mt-5">EXPERIENCE</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
 <SVGTile
 	svg="src/lib/assets/IntelliTect_WhiteBlue-Box.svg"
 	heading="Software Developer Intern"
 	subheading="06/2022 - 10/2023"
+	customHeight={48}
 />
 
 <SVGTile
 	svg="src/lib/assets/washington-state-cougars.svg"
 	heading="Washington State University"
 	subheading="BS Computer Science - Graduating 2026"
+	customHeight={32}
 />
 
 <!-- PROGRAMMING LANGUAGES -->
 <h1 class="font-black text-white text-5xl text-center mt-12">LANGUAGES</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<div class="grid grid-cols-2 gap-4">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
 	<LogoIconifyTile
 		heading="Dart (Flutter)"
 		subheading="Riverpod, GoRouter, GetX"
@@ -43,7 +45,7 @@
 
 	<LogoIconifyTile heading="Golang" subheading="Gin, GORM" icon="skill-icons:golang" />
 
-	<span class="col-span-2">
+	<span class="col-span-2 md:col-span-3">
 		<LogoIconifyTile
 			heading="C / C++"
 			subheading="WSU Computer Science, RayLib"
@@ -56,12 +58,12 @@
 <h1 class="font-black text-white text-5xl text-center mt-12">DATABASES</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<div class="grid grid-cols-2 gap-4">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
 	<LogoIconifyTile heading="MongoDB" subheading="PyMongo, Djongo" icon="skill-icons:mongodb" />
 
 	<LogoIconifyTile heading="PostgreSQL" subheading="Django" icon="logos:postgresql" />
 
-	<span class="col-span-2">
+	<span class="col-span-2 md:col-span-1">
 		<LogoIconifyTile heading="MySQL" subheading=".NET Entity Framework, GORM" icon="devicon:mysql" />
 	</span>
 </div>
@@ -70,8 +72,8 @@
 <h1 class="font-black text-white text-5xl text-center mt-12">CLOUD SKILLS</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<div class="grid grid-cols-2 gap-0">
-	<span class="col-span-2">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-0">
+	<span class="col-span-2 md:col-span-1">
 		<LogoIconifyTile
 			heading="Azure"
 			subheading="Web Apps, Databases, Blob Storage, Telemetry, SignalR"
@@ -96,32 +98,33 @@
 	svg="src/lib/assets/COA.png"
 	heading="Triangle STEM Fraternity"
 	subheading="WSU Chapter Founder and Vice President"
-	customHeight={30}
+	customHeight={72}
 />
 
 <SVGTile
 	svg="src/lib/assets/FBLA.png"
 	heading="3rd in the United States"
 	subheading="Coding and Programming 2021"
-	customHeight={30}
+	customHeight={72}
 />
 
 <SVGTile
 	svg="src/lib/assets/FBLA.png"
 	heading="Washington State Champion"
 	subheading="Coding and Programming 2021"
-	customHeight={30}
+	customHeight={72}
 />
 
 <SVGTile
 	svg="src/lib/assets/FBLA.png"
 	heading="Washington State Champion"
 	subheading="Website Design 2022"
-	customHeight={30}
+	customHeight={72}
 />
 
 <SVGTile
 	svg="src/lib/assets/IntelliTect_WhiteBlue-Box.svg"
 	heading="IntelliTect Scholar"
 	subheading="2022 Overall Winner"
+	customHeight={48}
 />

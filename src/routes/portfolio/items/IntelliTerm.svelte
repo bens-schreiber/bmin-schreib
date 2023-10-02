@@ -16,7 +16,7 @@
 	<Icon icon="logos:typescript-icon" class="text-4xl text-white" />
 	<Icon icon="logos:dotnet" class="text-4xl text-white" />
 	<Icon icon="devicon:azure" class="text-4xl text-white" />
-	<div slot="expanded">
+	<div slot="expanded" class="md:grid md:grid-cols-2">
 		<Tile class="mt-10 pb-10">
 			<h1 class="text-4xl text-white font-bold">About</h1>
 			<div class="border-t border-gray-300 my-3" />
@@ -64,7 +64,7 @@
 				front end mimics a bash termninal and recognizes most bash commands and bash hotkeys.
 			</p>
 		</Tile>
-		<Tile>
+		<Tile class="col-span-2">
 			<h1 class="text-4xl text-white font-bold">UI Snippet</h1>
 			<div class="border-t border-gray-300 my-3" />
 			<img src="src/lib/assets/intelliterm-ui.png" alt="IntelliTerm UI" />
