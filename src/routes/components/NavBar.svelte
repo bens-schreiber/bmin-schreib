@@ -12,7 +12,7 @@
 	}
 
 	function bgColor(selected: boolean): string {
-		return selected ? 'bg-bg-primary' : 'bg-bg-secondary';
+		return selected ? 'bg-bg-secondary' : 'bg-bg-primary';
 	}
 </script>
 
