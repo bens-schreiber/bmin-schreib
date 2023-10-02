@@ -2,13 +2,16 @@
 	import Tile from '../components/Tile.svelte';
 	import Icon from '@iconify/svelte';
 	import PortfolioProject from '../components/PortfolioProject.svelte';
+	const logoUrl = new URL('/src/lib/assets/ezquiz-logo.png', import.meta.url).href;
+	const demo1Url = new URL('/src/lib/assets/ezquiz-demo1.mp4', import.meta.url).href;
+	const demo2Url = new URL('/src/lib/assets/ezquiz-demo2.mp4', import.meta.url).href;
 </script>
 
 <PortfolioProject
 	title="EzQuiz"
 	description="FBLA Coding & Programming"
 	projectType="Desktop Software"
-	img="src/lib/assets/ezquiz-logo.png"
+	img={logoUrl}
 	bg="bg-blue-800"
 	href="https://github.com/bens-schreiber/pushapp-2023"
 >
@@ -62,16 +65,16 @@
 				<video
 					class="w-full"
 					controls
-					poster="src/lib/assets/ezquiz-logo.png"
-					src="src/lib/assets/ezquiz-demo2.mp4"
+					poster={logoUrl}
+					src={demo2Url}
 				>
 					<track kind="captions" srclang="en" label="English" />
 				</video>
 				<video
 					class="w-full mt-5"
 					controls
-					poster="src/lib/assets/ezquiz-logo.png"
-					src="src/lib/assets/ezquiz-demo1.mp4"
+					poster={logoUrl}
+					src={demo1Url}
 				>
 					<track kind="captions" srclang="en" label="English" />
 				</video>

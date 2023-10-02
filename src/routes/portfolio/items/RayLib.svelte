@@ -2,13 +2,15 @@
     import Tile from '../components/Tile.svelte';
     import Icon from '@iconify/svelte';
     import PortfolioProject from '../components/PortfolioProject.svelte';
+	const raylibLogo = new URL('/src/lib/assets/raylib-logo.png', import.meta.url).href;
+	const raylibDemo = new URL('/src/lib/assets/newton-phys-demo.mov', import.meta.url).href;
 </script>
 
 <PortfolioProject
 	title="Raylib Projects"
 	description="Calculus / Physics Simulators"
 	projectType="Desktop Software"
-	img="src/lib/assets/raylib-logo.png"
+	img={raylibLogo}
 	bg="bg-white"
 >
 	<Icon icon="logos:c" class="text-4xl text-white" />
@@ -42,8 +44,8 @@
 			<video
 				class="w-full mt-5"
 				controls
-				poster="src/lib/assets/raylib-logo.png"
-				src="src/lib/assets/newton-phys-demo.mov"
+				poster={raylibLogo}
+				src={raylibDemo}
 			>
 				<track kind="captions" src="path/to/captions.vtt" label="English" />
 			</video>

@@ -2,6 +2,11 @@
 	import SVGTile from './components/SVGTile.svelte';
 	import LogoIconifyTile from './components/LogoIconifyTile.svelte';
 	import FloatingDownloadButton from './components/FloatingDownloadButton.svelte';
+	const intellitectUrl = new URL('/src/lib/assets/IntelliTect_WhiteBlue-Box.svg', import.meta.url)
+		.href;
+	const wsuUrl = new URL('/src/lib/assets/washington-state-cougars.svg', import.meta.url).href;
+	const coaUrl = new URL('/src/lib/assets/COA.png', import.meta.url).href;
+	const fblaUrl = new URL('/src/lib/assets/FBLA.png', import.meta.url).href;
 </script>
 
 <FloatingDownloadButton />
@@ -11,17 +16,17 @@
 <div class="border-t border-gray-300 my-8 mx-2" />
 
 <SVGTile
-	svg="src/lib/assets/IntelliTect_WhiteBlue-Box.svg"
+	svg={intellitectUrl}
 	heading="Software Developer Intern"
 	subheading="06/2022 - 10/2023"
 	customHeight={48}
 />
 
 <SVGTile
-	svg="src/lib/assets/washington-state-cougars.svg"
+	svg={wsuUrl}
 	heading="Washington State University"
 	subheading="BS Computer Science - Graduating 2026"
-	customHeight={32}
+	customHeight={20}
 />
 
 <!-- PROGRAMMING LANGUAGES -->
@@ -64,7 +69,11 @@
 	<LogoIconifyTile heading="PostgreSQL" subheading="Django" icon="logos:postgresql" />
 
 	<span class="col-span-2 md:col-span-1">
-		<LogoIconifyTile heading="MySQL" subheading=".NET Entity Framework, GORM" icon="devicon:mysql" />
+		<LogoIconifyTile
+			heading="MySQL"
+			subheading=".NET Entity Framework, GORM"
+			icon="devicon:mysql"
+		/>
 	</span>
 </div>
 
@@ -95,35 +104,35 @@
 <div class="border-t border-gray-300 my-8 mx-2" />
 
 <SVGTile
-	svg="src/lib/assets/COA.png"
+	svg={coaUrl}
 	heading="Triangle STEM Fraternity"
 	subheading="WSU Chapter Founder and Vice President"
 	customHeight={72}
 />
 
 <SVGTile
-	svg="src/lib/assets/FBLA.png"
+	svg={fblaUrl}
 	heading="3rd in the United States"
 	subheading="Coding and Programming 2021"
 	customHeight={72}
 />
 
 <SVGTile
-	svg="src/lib/assets/FBLA.png"
+	svg={fblaUrl}
 	heading="Washington State Champion"
 	subheading="Coding and Programming 2021"
 	customHeight={72}
 />
 
 <SVGTile
-	svg="src/lib/assets/FBLA.png"
+	svg={fblaUrl}
 	heading="Washington State Champion"
 	subheading="Website Design 2022"
 	customHeight={72}
 />
 
 <SVGTile
-	svg="src/lib/assets/IntelliTect_WhiteBlue-Box.svg"
+	svg={intellitectUrl}
 	heading="IntelliTect Scholar"
 	subheading="2022 Overall Winner"
 	customHeight={48}

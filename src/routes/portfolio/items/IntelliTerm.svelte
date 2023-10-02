@@ -2,6 +2,7 @@
     import Tile from '../components/Tile.svelte';
     import Icon from '@iconify/svelte';
     import PortfolioProject from '../components/PortfolioProject.svelte';
+	const uiUrl = new URL('/src/lib/assets/intelliterm-ui.png', import.meta.url).href;
 </script>
 
 <PortfolioProject
@@ -67,7 +68,7 @@
 		<Tile class="col-span-2">
 			<h1 class="text-4xl text-white font-bold">UI Snippet</h1>
 			<div class="border-t border-gray-300 my-3" />
-			<img src="src/lib/assets/intelliterm-ui.png" alt="IntelliTerm UI" />
+			<img src={uiUrl} alt="IntelliTerm UI" />
 		</Tile>
 	</div>
 </PortfolioProject>

@@ -2,13 +2,14 @@
     import Tile from '../components/Tile.svelte';
     import Icon from '@iconify/svelte';
     import PortfolioProject from '../components/PortfolioProject.svelte';
+	const logoUrl = new URL('/src/lib/assets/1on1-logo.webp', import.meta.url).href;
 </script>
 
 <PortfolioProject
 	title="1ON1 Piano"
 	description="IntelliTect Internship"
 	projectType="Mobile App"
-	img="src/lib/assets/1on1-logo.webp"
+	img={logoUrl}
 	bg="bg-neutral-700"
 	marginTop={false}
 >

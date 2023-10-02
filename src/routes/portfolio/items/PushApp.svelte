@@ -2,6 +2,7 @@
     import Tile from '../components/Tile.svelte';
     import Icon from '@iconify/svelte';
     import PortfolioProject from '../components/PortfolioProject.svelte';
+	const logoUrl = new URL('/src/lib/assets/puapp-logo.png', import.meta.url).href;
 </script>
 
 <PortfolioProject
