@@ -25,7 +25,16 @@
 <!--
 	For the desktop version, the navbar/contact component is used on every page, so
 	we a grid with a fixed NavBar and Contact.
+
+	We are going to initially query to see if innerHeight and innerWidth
+	are set to 0, and if they are, render nothing. This functons as an await,
+	we don't want to render anything until we are sure that we are rendering
+	the right thing.
 -->
+{#if innerHeight == 0 && innerWidth == 0}
+<div/>
+
+{:else}
 {#if innerWidth > 768}
 	<div class="flex">
 		<span class="">
@@ -41,6 +50,7 @@
 {:else}
 	<NavBar />
 	<slot />
+{/if}
 {/if}
 
 <style global lang="postcss">
