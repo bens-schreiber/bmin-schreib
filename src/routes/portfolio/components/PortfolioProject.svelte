@@ -79,4 +79,4 @@
 	</div>
 {/if}
 
-<div class="m-28"/>
+<div class="m-16 md:m-28"/>
