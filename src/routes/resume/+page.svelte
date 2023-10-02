@@ -70,7 +70,7 @@
 <h1 class="font-black text-white text-5xl text-center mt-12">CLOUD SKILLS</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<div class="grid grid-cols-2 gap-4">
+<div class="grid grid-cols-2 gap-0">
 	<span class="col-span-2">
 		<LogoIconifyTile
 			heading="Azure"

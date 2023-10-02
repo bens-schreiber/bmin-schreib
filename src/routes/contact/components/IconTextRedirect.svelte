@@ -23,7 +23,7 @@
 	role="button"
 	on:click={onClick}
 	on:keydown={onKeyDown}
-	class="flex flex-row items-center text-white m-3 p-4 shadow-lg bg-bg-secondary"
+	class="flex items-center text-white m-3 p-4 shadow-lg bg-bg-secondary"
 >
 	<Icon class="w-10 h-10" {icon} color="white" />
 	<span class="text-xl ml-5">{text}</span>

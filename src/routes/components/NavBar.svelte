@@ -1,29 +1,50 @@
-<script>
-	import { page } from '$app/stores';
+<script lang="ts">
+	// Ideally I could just check the $page.url.pathname, but it is
+	// really buggy and doesn't update properly, so, I'm just using a bunch of vars :D
+	$: contactSelected = false;
+	$: resumeSelected = false;
+	$: workSelected = false;
+
+	function bgColor(selected: boolean): string {
+		return selected ? 'bg-bg-primary' : 'bg-bg-secondary';
+	}
 </script>
 
-<nav class="flex" style="max-width: 800px;">
+<nav class="flex">
 	<a
 		href="contact"
-		class="w-1/3 {$page.url.pathname === '/contact'
-			? 'bg-bg-primary'
-			: 'bg-bg-tertiary'} px-8 py-3 border-r border-r-slate-900 text-center text-white font-medium text-sm"
+		class=" {bgColor(
+			contactSelected
+		)} md:hidden grow px-8 py-3 border-r border-r-slate-900 text-center text-white font-medium text-sm"
+		on:click={() => {
+			contactSelected = true;
+			resumeSelected = false;
+			workSelected = false;
+		}}
 	>
 		CONTACT
 	</a>
 	<a
 		href="resume"
-		class="w-1/3 {$page.url.pathname === '/resume'
-			? 'bg-bg-primary'
-			: 'bg-bg-tertiary'} px-8 py-3 border-r border-r-slate-900 text-center text-white font-medium text-sm"
+		class="{bgColor(
+			resumeSelected
+		)} grow px-8 py-3 border-r border-r-slate-900 text-center text-white font-medium text-sm"
+		on:click={() => {
+			contactSelected = false;
+			resumeSelected = true;
+			workSelected = false;
+		}}
 	>
 		RESUME
 	</a>
 	<a
 		href="portfolio"
-		class="w-1/3 {$page.url.pathname === '/portfolio'
-			? 'bg-bg-primary'
-			: 'bg-bg-tertiary'} px-8 py-3 text-center text-white font-medium text-sm"
+		class="{bgColor(workSelected)} grow px-8 py-3 text-center text-white font-medium text-sm"
+		on:click={() => {
+			contactSelected = false;
+			resumeSelected = false;
+			workSelected = true;
+		}}
 	>
 		WORK
 	</a>
