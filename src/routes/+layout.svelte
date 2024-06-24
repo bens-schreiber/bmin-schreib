@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../styles/tailwind.css';
-	import {page} from '$app/stores';
+	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import NavBar from './components/NavBar.svelte';
 	import Contact from './contact/components/Contact.svelte';
@@ -15,8 +15,8 @@
 	$: innerHeight = 0;
 
 	// if the innerWidth is greater than 768px, route off of the /contact page if on it
-	$: if (innerWidth > 768 && $page.url.pathname === "/contact") {
-		window.location.href = "/resume"
+	$: if (innerWidth > 768 && $page.url.pathname === '/contact') {
+		window.location.href = '/resume';
 	}
 </script>
 
@@ -32,10 +32,8 @@
 	the right thing.
 -->
 {#if innerHeight == 0 && innerWidth == 0}
-<div/>
-
-{:else}
-{#if innerWidth > 768}
+	<div />
+{:else if innerWidth > 768}
 	<div class="flex">
 		<span class="">
 			<span class="fixed">
@@ -44,13 +42,14 @@
 			</span>
 		</span>
 		<span class="ml-[26rem] grow">
-			<slot />
+			<div class="mx-5">
+				<slot />
+			</div>
 		</span>
 	</div>
 {:else}
 	<NavBar />
 	<slot />
-{/if}
 {/if}
 
 <style global lang="postcss">

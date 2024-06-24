@@ -15,7 +15,7 @@
 <h1 class="font-black text-white text-5xl text-center mt-5">EXPERIENCE</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<div class="md:grid md:grid-cols-2">
+<div class="md:grid md:grid-cols-2 gap-5">
 	<SVGTile heading="Software Developer Intern" subheading="06/2022 - 10/2023">
 		<img src={intellitectUrl} alt="IntelliTect logo" class="h-24" />
 	</SVGTile>
@@ -26,67 +26,64 @@
 </div>
 
 <!-- PROGRAMMING LANGUAGES -->
-<h1 class="font-black text-white text-5xl text-center mt-12">LANGUAGES</h1>
+<h1 class="font-black text-white text-5xl text-center mt-12">CURRENT LANGUAGES</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+	<LogoIconifyTile heading="C" subheading="RayLib, POSIX" icon="logos:c" like={true} />
+
 	<LogoIconifyTile
-		heading="Dart (Flutter)"
-		subheading="Riverpod, GoRouter, GetX"
-		icon="logos:dart"
+		heading="C#"
+		subheading=".NET, XUnit, Coalesce"
+		icon="devicon:csharp"
+		like={true}
+		professional={true}
 	/>
 
-	<LogoIconifyTile heading="Python" subheading="Django, PyMongo" icon="logos:python" />
+	<LogoIconifyTile heading="Python" subheading="PyTest, Django" icon="logos:python" like={true} />
 
-	<LogoIconifyTile heading="C#" subheading=".NET " icon="devicon:csharp" />
+	<LogoIconifyTile
+		heading="Dart"
+		subheading="Flutter, Riverpod, GoRouter"
+		icon="logos:dart"
+		professional={true}
+	/>
 
-	<LogoIconifyTile heading="TS / JS" subheading="Svelte, React" icon="logos:typescript-icon" />
+	<LogoIconifyTile
+		heading="Golang"
+		subheading="Gin, Concurreny, Go Tests"
+		icon="skill-icons:golang"
+		like={true}
+	/>
 
-	<LogoIconifyTile heading="Java" subheading="JavaFX, JettyServer, Gradle" icon="logos:java" />
-
-	<LogoIconifyTile heading="Golang" subheading="Gin, GORM" icon="skill-icons:golang" />
-
-	<span class="col-span-2 md:col-span-3">
-		<LogoIconifyTile
-			heading="C / C++"
-			subheading="WSU Computer Science, RayLib"
-			icon="logos:c-plusplus"
-		/>
-	</span>
-</div>
-
-<!-- DATABASES -->
-<h1 class="font-black text-white text-5xl text-center mt-12">DATABASES</h1>
-<div class="border-t border-gray-300 my-8 mx-2" />
-
-<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-	<LogoIconifyTile heading="MongoDB" subheading="PyMongo, Djongo" icon="skill-icons:mongodb" />
-
-	<LogoIconifyTile heading="PostgreSQL" subheading="Django" icon="logos:postgresql" />
-
-	<span class="col-span-2 md:col-span-1">
-		<LogoIconifyTile
-			heading="MySQL"
-			subheading=".NET Entity Framework, GORM"
-			icon="devicon:mysql"
-		/>
-	</span>
+	<LogoIconifyTile
+		heading="Typescript"
+		subheading="Vue, Svelte, React, WebRTC"
+		icon="logos:typescript-icon"
+		professional={true}
+	/>
 </div>
 
 <!-- CLOUD RELATED PROGRAMMING SKILLS -->
 <h1 class="font-black text-white text-5xl text-center mt-12">CLOUD SKILLS</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<div class="grid grid-cols-2 md:grid-cols-3 gap-0">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-5">
 	<span class="col-span-2 md:col-span-1">
 		<LogoIconifyTile
 			heading="Azure"
-			subheading="Web Apps, Databases, Blob Storage, Telemetry, SignalR"
+			subheading="Web Apps, SqlServer, SignalR, Blob Storage"
 			icon="devicon:azure"
+			professional={true}
 		/>
 	</span>
 
-	<LogoIconifyTile heading="GitHub" subheading="CI/CD, Actions" icon="logos:github-icon" />
+	<LogoIconifyTile
+		heading="GitHub"
+		subheading="CI/CD, Actions"
+		icon="logos:github-icon"
+		professional={true}
+	/>
 
 	<LogoIconifyTile
 		heading="Docker"
@@ -99,16 +96,12 @@
 <h1 class="font-black text-white text-5xl text-center mt-12">ACCOLADES</h1>
 <div class="border-t border-gray-300 my-8 mx-2" />
 
-<div class="md:grid md:grid-cols-2">
+<div class="md:grid md:grid-cols-2 gap-5">
 	<span class="col-span-2">
 		<SVGTile heading="3rd in the United States" subheading="Coding and Programming 2021">
 			<img src={fblaUrl} alt="FBLA logo" class="h-72" />
 		</SVGTile>
 	</span>
-
-	<SVGTile heading="Triangle STEM Fraternity" subheading="WSU Chapter Founder and Vice President">
-		<img src={coaUrl} alt="COA logo" class="h-72" />
-	</SVGTile>
 
 	<SVGTile heading="Washington State Champion" subheading="Coding and Programming 2021">
 		<img src={fblaUrl} alt="FBLA logo" class="h-72" />
@@ -116,6 +109,10 @@
 
 	<SVGTile heading="Washington State Champion" subheading="Website Design 2022">
 		<img src={fblaUrl} alt="FBLA logo" class="h-72" />
+	</SVGTile>
+
+	<SVGTile heading="Triangle STEM Fraternity" subheading="WSU Chapter Founder and Vice President">
+		<img src={coaUrl} alt="COA logo" class="h-72" />
 	</SVGTile>
 
 	<SVGTile heading="IntelliTect Scholar" subheading="2022 Overall Winner">
