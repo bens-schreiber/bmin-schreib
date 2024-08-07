@@ -1,0 +1,18 @@
+{
+"applinks": {
+    "details": [
+            {
+            "appIDs": [ "Y9MNN9CWFT.com.bmin-schreib.thePushApp" ],
+            "components": [
+                {
+                "/": "/pushapp/*",
+                "?": { "id": "????????????????????????????????" }
+                }
+            ]
+            }
+        ]
+    },
+    "webcredentials": {
+    "apps": [ "Y9MNN9CWFT.com.bmin-schreib.thePushApp" ]
+    }
+}
