@@ -3,6 +3,9 @@
     "details": [
             {
             "appIDs": [ "Y9MNN9CWFT.com.bmin-schreib.thePushApp" ],
+            "paths": [
+                "*"
+            ],
             "components": [
                 {
                 "/": "/pushapp/*",
