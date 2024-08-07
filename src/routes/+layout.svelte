@@ -9,13 +9,17 @@
 
 	onMount(() => {
 		document.title = 'Benjamin Schreiber';
-		setTimeout(() => {
-			// if the innerWidth is greater than 768px, route off of the /contact page if on it
-			if (innerWidth > 768 && $page.url.pathname === '/contact') {
-				window.location.href = '/resume';
-			}
-			loading = false;
-		}, 250); // the people like the load
+
+		// timeout seems to fix jittery page transitions
+		if (loading) {
+			setTimeout(() => {
+				// if the innerWidth is greater than 768px, route off of the /contact page if on it
+				if (innerWidth > 768 && $page.url.pathname === '/contact') {
+					window.location.href = '/resume';
+				}
+				loading = false;
+			}, 10);
+		}
 	});
 </script>
 
@@ -26,8 +30,10 @@
 	we a grid with a fixed NavBar and Contact.
 -->
 
-{#if loading || $page.url.pathname == '/pushapp'}
+{#if loading}
 	<div />
+{:else if $page.url.pathname == '/pushapp'}
+	<slot />
 {:else if innerWidth > 768}
 	<div class="flex">
 		<span class="">
