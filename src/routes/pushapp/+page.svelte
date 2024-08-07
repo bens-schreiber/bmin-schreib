@@ -4,6 +4,6 @@
 	onMount(() => {
 		const urlParams = new URLSearchParams(window.location.search);
 		const invite = urlParams.get('invite');
-		window.location.href = 'com.bmin-schreib.thepushapp://?invite=' + invite;
+		window.location.href = 'com.bminschreib.thepushapp://?invite=' + invite;
 	});
 </script>

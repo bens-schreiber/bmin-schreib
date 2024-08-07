@@ -2,7 +2,7 @@
 "applinks": {
     "details": [
             {
-            "appIDs": [ "Y9MNN9CWFT.com.bmin-schreib.thePushApp" ],
+            "appIDs": [ "Y9MNN9CWFT.com.bminschreib.thePushApp" ],
             "paths": [
                 "*"
             ],
@@ -19,6 +19,6 @@
         ]
     },
     "webcredentials": {
-    "apps": [ "Y9MNN9CWFT.com.bmin-schreib.thePushApp" ]
+    "apps": [ "Y9MNN9CWFT.com.bminschreib.thePushApp" ]
     }
 }
