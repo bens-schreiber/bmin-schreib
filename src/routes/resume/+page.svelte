@@ -16,7 +16,7 @@
 <div class="border-t border-gray-300 my-8 mx-2" />
 
 <div class="md:grid md:grid-cols-2 gap-5">
-	<SVGTile heading="Software Developer Intern" subheading="06/2022 - 10/2023">
+	<SVGTile heading="Software Developer Intern" subheading="06/2022 - 8/2024">
 		<img src={intellitectUrl} alt="IntelliTect logo" class="h-24" />
 	</SVGTile>
 
@@ -111,7 +111,10 @@
 		<img src={fblaUrl} alt="FBLA logo" class="h-72" />
 	</SVGTile>
 
-	<SVGTile heading="Triangle STEM Fraternity" subheading="WSU Chapter Founder and Vice President">
+	<SVGTile
+		heading="Triangle STEM Fraternity"
+		subheading="WSU Chapter Founder and President Internal"
+	>
 		<img src={coaUrl} alt="COA logo" class="h-72" />
 	</SVGTile>
 
