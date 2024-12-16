@@ -11,7 +11,7 @@ body {
 }
 
 .article {
-    @apply flex flex-col space-y-20;
+    @apply flex flex-col space-y-32;
 }
 
 .article-title {
