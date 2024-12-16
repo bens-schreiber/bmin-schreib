@@ -31,12 +31,19 @@
       </h1>
 
       <svg class="w-16 h-[8rem]">
-        <rect id="blink" width="100%" height="100%" fill="#242934" />
+        <rect id="blink" width="100%" height="100%" fill="#242934">
+          <animate
+          attributeName="fill"
+          values="#242934;transparent"
+          begin="0s"
+          dur="2s"
+          calcMode="discrete"
+          repeatCount="indefinite"/>
+        </rect>
       </svg>
     </div>
 
-    <!-- Socials -->
-    <footer class="mt-12">
+    <footer class="my-12">
       <ul class="flex justify-center space-x-12">
         <li>
           <a
@@ -44,7 +51,7 @@
             target="_blank"
             class="flex items-center space-x-3"
           >
-            <i class="fab fa-linkedin text-4xl"></i>
+            <span class="iconify" data-icon="logos:linkedin-icon" data-inline="false" style="font-size: 2rem"></span>
             <span>Benjamin Schreiber</span>
           </a>
         </li>
@@ -54,7 +61,7 @@
             target="_blank"
             class="flex items-center space-x-3"
           >
-            <i class="fab fa-github text-4xl"></i>
+            <span class="iconify" data-icon="logos:github-icon" data-inline="false" style="font-size: 2rem"></span>
             <span>bens-schreiber</span>
           </a>
         </li>
@@ -64,7 +71,7 @@
             target="_blank"
             class="flex items-center space-x-3"
           >
-            <i class="fas fa-envelope text-4xl"></i>
+            <span class="iconify" data-icon="mdi:email" data-inline="false" style="font-size: 2rem"></span>
             <span>bpschreiber2003@gmail.com</span>
           </a>
         </li>
@@ -72,11 +79,13 @@
     </footer>
 
     <!-- Resume -->
-    <article id="resume" class="mt-32">
+    <article id="resume" class="mt-32 relative">
+      <div class="absolute right-3 top-6">
+        Last Modified: 2024-12-16
+      </div>
+
       <h2 class="article-title">EXPERIENCE</h1>
       <hr />
-
-      <!-- Experience -->
       <div class="grid grid-cols-3 gap-4 mx-8 mt-12">
         <div class="card">
           <img
@@ -100,7 +109,6 @@
         </div>
         <div class="card">
           <h3 class="font-bold">Elected Coursework</h3>
-          <hr />
           <ul class="font-medium">
             <li>CPTS 360 Systems Programming</li>
             <li>CPTS 350 Design & Analysis of Algorithms</li>
@@ -111,7 +119,6 @@
         </div>
       </div>
 
-      <!-- Skills -->
       <h2 class="article-title mt-12">SKILLS</h2>
       <hr class="color-dark" />
       <div class="grid grid-cols-6 gap-4 mt-12 mx-8">
@@ -200,10 +207,8 @@
         </div>
       </div>
 
-      <!-- Notable Work -->
       <h2 class="article-title mt-12">NOTABLE WORK</h2>
       <hr />
-
       <div class="grid grid-cols-3 gap-4 mt-12 mx-8">
         <div class="card">
           <h3 class="font-bold">1ON1 Piano (IntelliTect, VPL LLC)</h3>
@@ -274,7 +279,6 @@
         </div>
       </div>
 
-      <!-- Accolades -->
       <h2 class="article-title mt-12">ACCOLADES</h2>
       <hr />
       <div class="grid grid-cols-2 gap-4 mt-12 mx-8">
@@ -301,10 +305,136 @@
       </div>
     </article>
 
+    <div class="text-center text-5xl mt-24">
+      <div>.</div>
+      <div>.</div>
+      <div>.</div>
+      <div class="font-bold mt-10">
+        bschr<span class="text-primary">:/portfolio$</span>
+
+        <svg class="w-6 h-12 inline">
+          <rect id="blink" width="100%" height="100%" fill="#242934">
+            <animate
+            attributeName="fill"
+            values="#242934;transparent"
+            begin="0s"
+            dur="2s"
+            calcMode="discrete"
+            repeatCount="indefinite"/>
+          </rect>
+        </svg>
+      </div>
+    </div>
+
     <!-- Portfolio -->
-    <article id="portfolio" class="mt-16">
-      <h1 class="article-title">~/portfolio</h1>
+    <article id="portfolio" class="mt-44">
+      <h1 class="article-title">VIRTUAL PACKET TRACER (2024)</h1>
       <hr />
+      <div class="grid grid-cols-5 gap-4 mt-12 mx-8">
+        <div class="card col-span-3">
+          <h3 class="font-bold">About VPT</h3>
+          <p class="font-medium">
+            Virtual Packet Tracer is a network simulation tool I began as an open ended semester project for a cyber security class. Inspired by <a href="https://www.netacad.com/cisco-packet-tracer" target="_blank">Cisco Packet Tracer</a>, VPT is a lightweight, cross-platform network simulation tool that allows users to create, configure, and troubleshoot network topologies.  <br/>
+            
+            VPT is written in Rust and uses Raylib (a OpenGL wrapper) for rendering and RayGUI (an immediate mode GUI for Raylib) for the user interface. <br/><br/>
+
+            This project was created with the idea of simulating networks as closely as possible, and implements IEEE standards for all protocols, and accurately simulates the behavior of network devices, from the physical layer (byte serialization) to the network layer (ipv4).
+          </p>
+        </div>
+        <div class="card col-span-2 ">
+          <h3 class="font-bold">Features</h3>
+          <hr/>
+          <div class="flex font-medium space-x-8">
+            <ul>
+              <li>Ethernet Connections</li>
+              <li>Mac Addresses</li>
+              <li>Ethernet II protocol</li>
+              <li>Ethernet 802.3 protocol</li>
+              <li>Address Resolution Protocol</li>
+              <li>Layer 2 Switches</li>
+              <li>Rapid Spanning Tree Protocol</li>
+              <li>Internet Protocol Version 4</li>
+              <li>Internet Control Message Protocol</li>
+            </ul>
+            <ul>
+              <li>Subnetting</li>
+              <li>ARP Tables</li>
+              <li>Layer 3 Desktops</li>
+              <li>Layer 3 Routers</li>
+              <li>RIP protocol</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <span
+            class="iconify mx-auto"
+            data-icon="devicon:rust"
+            data-inline="false"
+            style="font-size: 7rem"
+          ></span>
+          <h3 class="skill-header mt-5">Created in Rust</h3>
+        </div>
+        <div class="card">
+          <img src="assets/raylib.png" alt="Raylib Logo" class="mx-auto h-28" />
+          <h3 class="skill-header mt-5">Rendered with Raylib</h3>
+        </div>
+        <div class="card">
+          <a href="https://github.com/bens-schreiber/virtual-packet-tracer" target="_blank"> 
+            <span class="iconify mx-auto" data-icon="logos:github-icon" data-inline="false" style="font-size: 7rem"></span>
+            <h3 class="skill-header mt-5">View on GitHub</h3>
+          </a>
+        </div>
+        <div class="card">
+          <video controls class="mx-auto">
+            <source src="assets/vpt-1.mov" type="video/quicktime">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card">
+          <video controls class="mx-auto">
+            <source src="assets/vpt-2.mov" type="video/quicktime">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+
     </article>
+
+    <!-- Socials (again) -->
+    <footer class="my-12">
+      <ul class="flex justify-center space-x-12">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/benjamin-schreiber-a14aa219a/"
+            target="_blank"
+            class="flex items-center space-x-3"
+          >
+            <span class="iconify" data-icon="logos:linkedin-icon" data-inline="false" style="font-size: 2rem"></span>
+            <span>Benjamin Schreiber</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/bens-schreiber"
+            target="_blank"
+            class="flex items-center space-x-3"
+          >
+            <span class="iconify" data-icon="logos:github-icon" data-inline="false" style="font-size: 2rem"></span>
+            <span>bens-schreiber</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:bpschreiber2003@gmail.com"
+            target="_blank"
+            class="flex items-center space-x-3"
+          >
+            <span class="iconify" data-icon="mdi:email" data-inline="false" style="font-size: 2rem"></span>
+            <span>bpschreiber2003@gmail.com</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
+
