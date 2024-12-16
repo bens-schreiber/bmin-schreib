@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 body {
-    @apply text-text;
+    @apply text-text bg-background;
 }
 
 .card {
     @apply shadow p-5;
+}
+
+.article {
+    @apply flex flex-col space-y-20;
 }
 
 .article-title {

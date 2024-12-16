@@ -6,18 +6,13 @@
     <title>Benjamin Schreiber</title>
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link href="/styles.css" rel="stylesheet" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
   </head>
 
-  <body class="bg-background">
-
-    <!-- Navigation bar -->
-    <nav class="absolute right-0 top-0">
-      <ul class="flex space-x-7 ml-auto bg-background mr-5 mt-5 font-medium">
+  <body>
+    <!-- Nav bar -->
+    <nav class="my-5 mx-10">
+      <ul class="flex space-x-7 justify-end font-medium bg-background">
         <li><a href="#">Home</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -25,22 +20,23 @@
     </nav>
 
     <!-- "Logo" -->
-    <div class="flex justify-center space-x-3 mt-32 mr-8">
+    <div class="flex justify-center space-x-3 mt-16 mr-8">
       <h1 class="font-bold text-9xl">
         <span class="text-dark"
-          >bschr<span class="text-primary">:/$</span></span
+          >bschr<span class="text-primary">:/resume$</span></span
         >
       </h1>
 
       <svg class="w-16 h-[8rem]">
         <rect id="blink" width="100%" height="100%" fill="#242934">
           <animate
-          attributeName="fill"
-          values="#242934;transparent"
-          begin="0s"
-          dur="2s"
-          calcMode="discrete"
-          repeatCount="indefinite"/>
+            attributeName="fill"
+            values="#242934;transparent"
+            begin="0s"
+            dur="2s"
+            calcMode="discrete"
+            repeatCount="indefinite"
+          />
         </rect>
       </svg>
     </div>
@@ -54,7 +50,12 @@
             target="_blank"
             class="flex items-center space-x-3"
           >
-            <span class="iconify" data-icon="logos:linkedin-icon" data-inline="false" style="font-size: 2rem"></span>
+            <span
+              class="iconify"
+              data-icon="logos:linkedin-icon"
+              data-inline="false"
+              style="font-size: 2rem"
+            ></span>
             <span>Benjamin Schreiber</span>
           </a>
         </li>
@@ -64,7 +65,12 @@
             target="_blank"
             class="flex items-center space-x-3"
           >
-            <span class="iconify" data-icon="logos:github-icon" data-inline="false" style="font-size: 2rem"></span>
+            <span
+              class="iconify"
+              data-icon="logos:github-icon"
+              data-inline="false"
+              style="font-size: 2rem"
+            ></span>
             <span>bens-schreiber</span>
           </a>
         </li>
@@ -74,7 +80,12 @@
             target="_blank"
             class="flex items-center space-x-3"
           >
-            <span class="iconify" data-icon="mdi:email" data-inline="false" style="font-size: 2rem"></span>
+            <span
+              class="iconify"
+              data-icon="mdi:email"
+              data-inline="false"
+              style="font-size: 2rem"
+            ></span>
             <span>bpschreiber2003@gmail.com</span>
           </a>
         </li>
@@ -82,436 +93,540 @@
     </footer>
 
     <!-- Resume -->
-    <article id="resume" class="mt-32 relative">
-      <div class="absolute right-3 top-6">
-        Last Modified: 2024-12-16
-      </div>
-
-      <h2 class="article-title">EXPERIENCE</h1>
-      <hr />
-      <div class="grid grid-cols-3 gap-4 mx-8 mt-12">
-        <div class="card">
-          <img
-            src="assets/intellitect.svg"
-            alt="IntelliTect Logo"
-            class="mx-auto mb-3"
-          />
-          <ul>
-            <li class="font-bold">IntelliTect</li>
-            <li class="font-medium">Software Developer Intern</li>
-            <li>06/2022 - 08/2024</li>
-          </ul>
-        </div>
-        <div class="card">
-          <img src="assets/wsu.svg" alt="WSU Logo" class="mx-auto h-28" />
-          <ul>
-            <li class="font-bold">Washington State University - Pullman</li>
-            <li class="font-medium">Bachelors in Computer Science</li>
-            <li class="font-medium">Graduating May 2026</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3 class="font-bold">Elected Coursework</h3>
-          <ul class="font-medium">
-            <li>CPTS 360 Systems Programming</li>
-            <li>CPTS 350 Design & Analysis of Algorithms</li>
-            <li>CPTS 451 Database Systems</li>
-            <li>CPTS 411 Parallel Programming</li>
-            <li>MATH 453 Graph Theory</li>
-          </ul>
+    <article id="resume" class="article mt-32 relative">
+      <div>
+        <h2 class="article-title">EXPERIENCE</h2>
+        <hr />
+        <div class="grid grid-cols-3 gap-4 mx-8 mt-12">
+          <div class="card">
+            <img
+              src="assets/intellitect.svg"
+              alt="IntelliTect Logo"
+              class="mx-auto mb-3"
+            />
+            <ul>
+              <li class="font-bold">IntelliTect</li>
+              <li class="font-medium">Software Developer Intern</li>
+              <li>06/2022 - 08/2024</li>
+            </ul>
+          </div>
+          <div class="card">
+            <img src="assets/wsu.svg" alt="WSU Logo" class="mx-auto h-28" />
+            <ul>
+              <li class="font-bold">Washington State University - Pullman</li>
+              <li class="font-medium">Bachelors in Computer Science</li>
+              <li class="font-medium">Graduating May 2026</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="font-bold">Elected Coursework</h3>
+            <ul class="font-medium">
+              <li>CPTS 360 Systems Programming</li>
+              <li>CPTS 350 Design & Analysis of Algorithms</li>
+              <li>CPTS 451 Database Systems</li>
+              <li>CPTS 411 Parallel Programming</li>
+              <li>MATH 453 Graph Theory</li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <h2 class="article-title mt-12">SKILLS</h2>
-      <hr class="color-dark" />
-      <div class="grid grid-cols-6 gap-4 mt-12 mx-8">
-        <div class="card">
-          <span
-            class="iconify mx-auto"
-            data-icon="vscode-icons:file-type-azure"
-            data-inline="false"
-            style="font-size: 6rem"
-          ></span>
-          <h3 class="skill-header">Azure</h3>
-          <ul class="skill-items">
-            <li>Web Apps</li>
-            <li>SQL Server</li>
-            <li>SignalR</li>
-            <li>Blob Storage</li>
-          </ul>
-        </div>
-        <div class="card">
-          <span
-            class="iconify mx-auto"
-            data-icon="devicon:csharp"
-            data-inline="false"
-            style="font-size: 6rem"
-          ></span>
-          <h3 class="skill-header">C#</h3>
-          <ul class="skill-items">
-            <li>ASP.NET</li>
-            <li>Entity Framework</li>
-            <li>XUnit, Moq</li>
-          </ul>
-        </div>
-        <div class="card">
-          <span
-            class="iconify mx-auto"
-            data-icon="vscode-icons:file-type-typescript-official"
-            data-inline="false"
-            style="font-size: 6rem"
-          ></span>
-          <h3 class="skill-header">TypeScript</h3>
-          <ul class="skill-items">
-            <li>Vue.js</li>
-            <li>React.js</li>
-            <li>WebRTC</li>
-          </ul>
-        </div>
-        <div class="card">
-          <span
-            class="iconify mx-auto"
-            data-icon="vscode-icons:file-type-python"
-            data-inline="false"
-            style="font-size: 6rem"
-          ></span>
-          <h3 class="skill-header">Python</h3>
-          <ul class="skill-items">
-            <li>Django</li>
-            <li>Pytest</li>
-            <li>Flask</li>
-          </ul>
-        </div>
-        <div class="card">
-          <span
-            class="iconify mx-auto"
-            data-icon="logos:c"
-            data-inline="false"
-            style="font-size: 6rem"
-          ></span>
-          <h3 class="skill-header">C</h3>
-          <ul class="skill-items">
-            <li>Kernel Modules</li>
-            <li>RayLib</li>
-          </ul>
-        </div>
-        <div class="card">
-          <span
-            class="iconify mx-auto"
-            data-icon="devicon:go-wordmark"
-            data-inline="false"
-            style="font-size: 6rem"
-          ></span>
-          <h3 class="skill-header">Golang</h3>
-          <ul class="skill-items">
-            <li>Gin</li>
-            <li>Gorm</li>
-          </ul>
-        </div>
-      </div>
-
-      <h2 class="article-title mt-12">NOTABLE WORK</h2>
-      <hr />
-      <div class="grid grid-cols-3 gap-4 mt-12 mx-8">
-        <div class="card">
-          <h3 class="font-bold">1ON1 Piano (IntelliTect, VPL LLC)</h3>
-          <ul class="font-medium">
-            <li>
-              Recreated and upgraded a mobile app to facilitate piano lessons
-              via MIDI, enhancing user experience by streamlining lesson
-              delivery
-            </li>
-            <br />
-            <li>
-              Addressed WebRTC layer issues, reducing network related dropped
-              calls by 90%
-            </li>
-            <br />
-            <li>
-              Spearheaded the implementation of a user File Sharing Library w/
-              Azure Blob storage
-            </li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3 class="font-bold">
-            Audience Interactive Systems (IntelliTect, Spokane Symphony)
-          </h3>
-          <ul class="font-medium">
-            <li>
-              Developed a concurrent voting system to synchronize end devices in
-              real-time, utilizing Redis concurrent queues, enhancing user
-              engagement and participation
-            </li>
-            <br />
-            <li>
-              Engineered a dynamic real-time word cloud, achieving seamless
-              interaction for thousands of concurrent users
-            </li>
-            <br />
-            <li>
-              Implemented an algorithm for proportional word sizing in constant
-              time, optimizing display efficiency and user experience in data
-              visualization
-            </li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3 class="font-bold">
-            WSU Picol Database (IntelliTect, Washington State University CAHNRS
-            College)
-          </h3>
-          <ul class="font-medium">
-            <li>
-              Recreated a decade-old SQL database via reverse scaffolding,
-              enhancing data integrity and access speed, significantly improving
-              query performance.
-            </li>
-            <br />
-            <li>
-              Modernized an outdated .NET implementation, eliminating
-              antipatterns and deprecated techniques, which increased system
-              reliability and maintenance efficiency
-            </li>
-            <br />
-            <li>
-              Reengineered the front end to mirror a contemporary search engine,
-              boosting user engagement and search efficiency
-            </li>
-          </ul>
+      <div>
+        <h2 class="article-title mt-12">SKILLS</h2>
+        <hr class="color-dark" />
+        <div class="grid grid-cols-6 gap-4 mt-12 mx-8">
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="vscode-icons:file-type-azure"
+              data-inline="false"
+              style="font-size: 6rem"
+            ></span>
+            <h3 class="skill-header">Azure</h3>
+            <ul class="skill-items">
+              <li>Web Apps</li>
+              <li>SQL Server</li>
+              <li>SignalR</li>
+              <li>Blob Storage</li>
+            </ul>
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="devicon:csharp"
+              data-inline="false"
+              style="font-size: 6rem"
+            ></span>
+            <h3 class="skill-header">C#</h3>
+            <ul class="skill-items">
+              <li>ASP.NET</li>
+              <li>Entity Framework</li>
+              <li>XUnit, Moq</li>
+            </ul>
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="vscode-icons:file-type-typescript-official"
+              data-inline="false"
+              style="font-size: 6rem"
+            ></span>
+            <h3 class="skill-header">TypeScript</h3>
+            <ul class="skill-items">
+              <li>Vue.js</li>
+              <li>React.js</li>
+              <li>WebRTC</li>
+            </ul>
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="vscode-icons:file-type-python"
+              data-inline="false"
+              style="font-size: 6rem"
+            ></span>
+            <h3 class="skill-header">Python</h3>
+            <ul class="skill-items">
+              <li>Django</li>
+              <li>Pytest</li>
+              <li>Flask</li>
+            </ul>
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="logos:c"
+              data-inline="false"
+              style="font-size: 6rem"
+            ></span>
+            <h3 class="skill-header">C</h3>
+            <ul class="skill-items">
+              <li>Kernel Modules</li>
+              <li>RayLib</li>
+            </ul>
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="devicon:go-wordmark"
+              data-inline="false"
+              style="font-size: 6rem"
+            ></span>
+            <h3 class="skill-header">Golang</h3>
+            <ul class="skill-items">
+              <li>Gin</li>
+              <li>Gorm</li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <h2 class="article-title mt-12">ACCOLADES</h2>
-      <hr />
-      <div class="grid grid-cols-2 gap-4 mt-12 mx-8">
-        <div class="card">
-          <img src="assets/fbla.png" alt="FBLA Logo" class="mx-auto h-64" />
-          <h3 class="font-medium">Future Business Leaders of America</h3>
-          <ul>
-            <li>3rd Place, National - Coding and Programming (2021)</li>
-            <li>1st Place, State - Website Design (2022)</li>
-          </ul>
+      <div>
+        <h2 class="article-title mt-12">NOTABLE WORK</h2>
+        <hr />
+        <div class="grid grid-cols-3 gap-4 mt-12 mx-8">
+          <div class="card">
+            <h3 class="font-bold">1ON1 Piano (IntelliTect, VPL LLC)</h3>
+            <ul class="font-medium">
+              <li>
+                Recreated and upgraded a mobile app to facilitate piano lessons
+                via MIDI, enhancing user experience by streamlining lesson
+                delivery
+              </li>
+              <br />
+              <li>
+                Addressed WebRTC layer issues, reducing network related dropped
+                calls by 90%
+              </li>
+              <br />
+              <li>
+                Spearheaded the implementation of a user File Sharing Library w/
+                Azure Blob storage
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="font-bold">
+              Audience Interactive Systems (IntelliTect, Spokane Symphony)
+            </h3>
+            <ul class="font-medium">
+              <li>
+                Developed a concurrent voting system to synchronize end devices
+                in real-time, utilizing Redis concurrent queues, enhancing user
+                engagement and participation
+              </li>
+              <br />
+              <li>
+                Engineered a dynamic real-time word cloud, achieving seamless
+                interaction for thousands of concurrent users
+              </li>
+              <br />
+              <li>
+                Implemented an algorithm for proportional word sizing in
+                constant time, optimizing display efficiency and user experience
+                in data visualization
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="font-bold">
+              WSU Picol Database (IntelliTect, Washington State University
+              CAHNRS College)
+            </h3>
+            <ul class="font-medium">
+              <li>
+                Recreated a decade-old SQL database via reverse scaffolding,
+                enhancing data integrity and access speed, significantly
+                improving query performance.
+              </li>
+              <br />
+              <li>
+                Modernized an outdated .NET implementation, eliminating
+                antipatterns and deprecated techniques, which increased system
+                reliability and maintenance efficiency
+              </li>
+              <br />
+              <li>
+                Reengineered the front end to mirror a contemporary search
+                engine, boosting user engagement and search efficiency
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-          <img
-            src="assets/triangle.png"
-            alt="Triangle Logo"
-            class="mx-auto h-52"
-          />
-          <h3 class="font-medium mt-10">Triangle STEM Fraternity</h3>
-          <ul>
-            <li>Chapter Founder, Vice President Internal (2022)</li>
-            <!-- Rush Triangle! -->
-          </ul>
+      </div>
+
+      <div>
+        <h2 class="article-title mt-12">ACCOLADES</h2>
+        <hr />
+        <div class="grid grid-cols-2 gap-4 mt-12 mx-8">
+          <div class="card">
+            <img src="assets/fbla.png" alt="FBLA Logo" class="mx-auto h-64" />
+            <h3 class="font-medium">Future Business Leaders of America</h3>
+            <ul>
+              <li>3rd Place, National - Coding and Programming (2021)</li>
+              <li>1st Place, State - Website Design (2022)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <img
+              src="assets/triangle.png"
+              alt="Triangle Logo"
+              class="mx-auto h-52"
+            />
+            <h3 class="font-medium mt-10">Triangle STEM Fraternity</h3>
+            <ul>
+              <li>Chapter Founder, Vice President Internal (2022)</li>
+              <!-- Rush Triangle! -->
+            </ul>
+          </div>
         </div>
       </div>
     </article>
 
-    <!-- Portfolio -->
-    <div class="text-center text-5xl mt-24">
+    <!-- "Logo" (again) -->
+    <div id="portfolio" class="text-center text-9xl">
+      <div class="opacity-40">.</div>
+      <div class="opacity-65">.</div>
       <div>.</div>
-      <div>.</div>
-      <div>.</div>
-      <div class="font-bold mt-10">
+      <div class="font-bold mt-5">
         bschr<span class="text-primary">:/portfolio$</span>
 
-        <svg class="w-6 h-12 inline">
+        <svg class="w-16 h-[8rem] inline">
           <rect id="blink" width="100%" height="100%" fill="#242934">
             <animate
-            attributeName="fill"
-            values="#242934;transparent"
-            begin="0s"
-            dur="2s"
-            calcMode="discrete"
-            repeatCount="indefinite"/>
+              attributeName="fill"
+              values="#242934;transparent"
+              begin="0s"
+              dur="2s"
+              calcMode="discrete"
+              repeatCount="indefinite"
+            />
           </rect>
         </svg>
       </div>
     </div>
 
-    <article id="portfolio" class="mt-44">
-      <h2 class="article-title">VIRTUAL PACKET TRACER</h1>
-      <hr />
-      <div class="grid grid-cols-5 gap-4 mt-12 mx-8">
-        <div class="card col-span-3">
-          <h3 class="font-bold">About VPT</h3>
-          <p class="font-medium">
-            Virtual Packet Tracer is a network simulation tool I began as an open ended semester project for a cyber security class. Inspired by <a href="https://www.netacad.com/cisco-packet-tracer" target="_blank">Cisco Packet Tracer</a>, VPT is a lightweight, cross-platform network simulation tool that allows users to create, configure, and troubleshoot network topologies.  <br/>
-            
-            VPT is written in Rust and uses Raylib (a OpenGL wrapper) for rendering and RayGUI (an immediate mode GUI for Raylib) for the user interface. <br/><br/>
+    <!-- Portfolio -->
+    <article class="article mt-32">
+      <div>
+        <h2 class="article-title">VIRTUAL PACKET TRACER</h2>
+        <hr />
+        <div class="grid grid-cols-5 gap-4 mt-12 mx-8">
+          <div class="card col-span-3">
+            <h3 class="font-bold">About VPT</h3>
+            <p class="font-medium">
+              Virtual Packet Tracer is a network simulation tool I began as an
+              open ended semester project for a cyber security class. Inspired
+              by
+              <a
+                href="https://www.netacad.com/cisco-packet-tracer"
+                target="_blank"
+                >Cisco Packet Tracer</a
+              >, VPT is a lightweight, cross-platform network simulation tool
+              that allows users to create, configure, and troubleshoot network
+              topologies. <br />
 
-            This project was created with the idea of simulating networks as closely as possible, and implements IEEE standards for all protocols, and accurately simulates the behavior of network devices, from the physical layer (byte serialization) to the network layer (ipv4).
-          </p>
-        </div>
-        <div class="card col-span-2 ">
-          <h3 class="font-bold">Features</h3>
-          <div class="flex font-medium space-x-8">
-            <ul>
-              <li>Ethernet Connections</li>
-              <li>Mac Addresses</li>
-              <li>Ethernet II protocol</li>
-              <li>Ethernet 802.3 protocol</li>
-              <li>Address Resolution Protocol</li>
-              <li>Layer 2 Switches</li>
-              <li>Rapid Spanning Tree Protocol</li>
-              <li>Internet Protocol Version 4</li>
-              <li>Internet Control Message Protocol</li>
-            </ul>
-            <ul>
-              <li>Subnetting</li>
-              <li>ARP Tables</li>
-              <li>Layer 3 Desktops</li>
-              <li>Layer 3 Routers</li>
-              <li>RIP protocol</li>
-            </ul>
+              VPT is written in Rust and uses Raylib (a OpenGL wrapper) for
+              rendering and RayGUI (an immediate mode GUI for Raylib) for the
+              user interface. <br /><br />
+
+              This project was created with the idea of simulating networks as
+              closely as possible, and implements IEEE standards for all
+              protocols, and accurately simulates the behavior of network
+              devices, from the physical layer (byte serialization) to the
+              network layer (ipv4).
+            </p>
           </div>
-        </div>
-        <div class="card">
-          <span
-            class="iconify mx-auto"
-            data-icon="devicon:rust"
-            data-inline="false"
-            style="font-size: 7rem"
-          ></span>
-          <h3 class="skill-header mt-5">Created in Rust</h3>
-        </div>
-        <div class="card">
-          <img src="assets/raylib.png" alt="Raylib Logo" class="mx-auto h-28" />
-          <h3 class="skill-header mt-5">Rendered with Raylib</h3>
-        </div>
-        <div class="card">
-          <a href="https://github.com/bens-schreiber/virtual-packet-tracer" target="_blank"> 
-            <span class="iconify mx-auto" data-icon="logos:github-icon" data-inline="false" style="font-size: 7rem"></span>
-            <h3 class="skill-header mt-5">View on GitHub</h3>
-          </a>
-        </div>
-        <div class="card">
-          <video controls class="mx-auto">
-            <source src="assets/vpt-1.mov" type="video/quicktime">
+          <div class="card col-span-2">
+            <h3 class="font-bold">Features</h3>
+            <div class="flex font-medium space-x-8">
+              <ul>
+                <li>Ethernet Connections</li>
+                <li>Mac Addresses</li>
+                <li>Ethernet II protocol</li>
+                <li>Ethernet 802.3 protocol</li>
+                <li>Address Resolution Protocol</li>
+                <li>Layer 2 Switches</li>
+                <li>Rapid Spanning Tree Protocol</li>
+                <li>Internet Protocol Version 4</li>
+                <li>Internet Control Message Protocol</li>
+              </ul>
+              <ul>
+                <li>Subnetting</li>
+                <li>ARP Tables</li>
+                <li>Layer 3 Desktops</li>
+                <li>Layer 3 Routers</li>
+                <li>RIP protocol</li>
+              </ul>
+            </div>
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="devicon:rust"
+              data-inline="false"
+              style="font-size: 7rem"
+            ></span>
+            <h3 class="skill-header mt-5">Created in Rust</h3>
+          </div>
+          <div class="m-auto">
+            <img
+              src="assets/raylib.png"
+              alt="Raylib Logo"
+              class="mx-auto h-28"
+            />
+            <h3 class="skill-header mt-5">Rendered with Raylib</h3>
+          </div>
+          <div class="m-auto">
+            <a
+              href="https://github.com/bens-schreiber/virtual-packet-tracer"
+              target="_blank"
+            >
+              <span
+                class="iconify mx-auto"
+                data-icon="logos:github-icon"
+                data-inline="false"
+                style="font-size: 7rem"
+              ></span>
+              <h3 class="skill-header mt-5 underline">View on GitHub</h3>
+            </a>
+          </div>
+          <video controls class="m-auto">
+            <source src="assets/vpt-1.mov" type="video/quicktime" />
+            Your browser does not support the video tag.
+          </video>
+          <video controls class="m-auto">
+            <source src="assets/vpt-2.mov" type="video/quicktime" />
             Your browser does not support the video tag.
           </video>
         </div>
-        <div class="card">
-          <video controls class="mx-auto">
-            <source src="assets/vpt-2.mov" type="video/quicktime">
-            Your browser does not support the video tag.
-          </video>
-        </div>
       </div>
 
-      <h2 class="article-title mt-12"> THE PUSHAPP </h2>
-      <hr />
-      <div class="grid grid-cols-5 gap-4 mt-12 mx-8">
-        <div class="card col-span-3">
-          <h3 class="font-bold">About PushApp</h3>
-          <p class="font-medium">
-            PushApp is a mobile application I developed for friends to play with. The concept is that you may group yourself on the app via invitations, and every server determined interval (3 hours) a random person in the group would receive a push notification to do N pushups (where N increments every time someone completes the task), and take a photo of where they were when they had to do the pushups. The app is a social challenge that I launched on the App store in 2024. <br/><br/>
+      <div>
+        <h2 class="article-title">THE PUSHAPP</h2>
+        <hr />
+        <div class="grid grid-cols-5 gap-4 mt-12 mx-8">
+          <div class="card col-span-3">
+            <h3 class="font-bold">About PushApp</h3>
+            <p class="font-medium">
+              PushApp is a mobile application I developed for friends to play
+              with. The concept is that you may group yourself on the app via
+              invitations, and every server determined interval (3 hours) a
+              random person in the group would receive a push notification to do
+              N pushups (where N increments every time someone completes the
+              task), and take a photo of where they were when they had to do the
+              pushups. The app is a social challenge that I launched on the App
+              store in 2024. <br /><br />
 
-            PushApp was developed with a Flutter frontend utilizing Riverpod and GoRouter, coupled with a Supabase backend and Firebase Cloud Messaging for push notifications. It was developed in about two weeks.
-          </p>
-        </div>
-        <div class="card col-span-2">
-          <h3 class="font-bold">Features</h3>
-          <div class="flex font-medium space-x-8">
-            <ul>
-              <li>Create accounts with Supabase OTP authentication</li>
-              <li>Join or create groups</li>
-              <li>Deeplinked invitation codes to groups</li>
-              <li>Get notified when you are the holder of the "pushup token"</li>
-              <li>Incrementing pushup count</li>
-              <li>Take a photo of your pushup location</li>
-              <li>View a "pushup story" consisting of each users most recent pushup photo</li>
-            </ul>
+              PushApp was developed with a Flutter frontend utilizing Riverpod
+              and GoRouter, coupled with a Supabase backend and Firebase Cloud
+              Messaging for push notifications. It was developed in about two
+              weeks.
+            </p>
+          </div>
+          <div class="card col-span-2">
+            <h3 class="font-bold">Features</h3>
+            <div class="flex font-medium space-x-8">
+              <ul>
+                <li>Create accounts with Supabase OTP authentication</li>
+                <li>Join or create groups</li>
+                <li>Deeplinked invitation codes to groups</li>
+                <li>
+                  Get notified when you are the holder of the "pushup token"
+                </li>
+                <li>Incrementing pushup count</li>
+                <li>Take a photo of your pushup location</li>
+                <li>
+                  View a "pushup story" consisting of each users most recent
+                  pushup photo
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row-span-2">
+            <img src="assets/pushapp-1.png" alt="PushApp" />
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="logos:firebase"
+              data-inline="false"
+              style="font-size: 7rem"
+            ></span>
+            <h3 class="skill-header mt-5">Firebase Cloud Messaging</h3>
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="logos:supabase-icon"
+              data-inline="false"
+              style="font-size: 7rem"
+            ></span>
+            <h3 class="skill-header mt-5">Supabase Backend</h3>
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="logos:flutter"
+              data-inline="false"
+              style="font-size: 7rem"
+            ></span>
+            <h3 class="skill-header mt-5">Flutter Frontend w/ Riverpod</h3>
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="logos:postgresql"
+              data-inline="false"
+              style="font-size: 7rem"
+            ></span>
+            <h3 class="skill-header mt-5">PostgreSQL Database</h3>
+          </div>
+          <div class="m-auto">
+            <a
+              href="https://github.com/bens-schreiber/the_pushapp"
+              target="_blank"
+            >
+              <span
+                class="iconify mx-auto"
+                data-icon="logos:github-icon"
+                data-inline="false"
+                style="font-size: 7rem"
+              ></span>
+              <h3 class="skill-header mt-5 underline">View on GitHub</h3>
+            </a>
           </div>
         </div>
-        <div class="card row-span-2">
-          <img src="assets/pushapp-1.png" alt="PushApp" />
-        </div>
-        <div class="card">
-          <span
-            class="iconify mx-auto"
-            data-icon="logos:firebase"
-            data-inline="false"
-            style="font-size: 7rem"
-          ></span>
-          <h3 class="skill-header mt-5">Firebase Cloud Messaging</h3>
-        </div>
-        <div class="card">
-          <span class="iconify mx-auto" data-icon="logos:supabase-icon" data-inline="false" style="font-size: 7rem"></span>
-          <h3 class="skill-header mt-5">Supabase Backend</h3>
-        </div>
-        <div class="card">
-          <span class="iconify mx-auto" data-icon="logos:flutter" data-inline="false" style="font-size: 7rem"></span>
-          <h3 class="skill-header mt-5">Flutter Frontend w/ Riverpod</h3>
-        </div>
-        <div class="card">
-          <span class="iconify mx-auto" data-icon="logos:postgresql" data-inline="false" style="font-size: 7rem"></span>
-          <h3 class="skill-header mt-5">PostgreSQL Database</h3>
-        </div>
-        <div class="card">
-          <a href="https://github.com/bens-schreiber/the_pushapp" target="_blank"> 
-            <span class="iconify mx-auto" data-icon="logos:github-icon" data-inline="false" style="font-size: 7rem"></span>
-            <h3 class="skill-header mt-5">View on GitHub</h3>
-          </a>
-        </div>
       </div>
 
-      <h2 class="article-title mt-12">GRAPH THEORIST SKETCHPAD</h2>
-      <hr />
-      <div class="grid grid-cols-5 gap-4 mt-12 mx-8">
-        <div class="card col-span-3">
-          <h3 class="font-bold">About Graph Theorist Sketchpad</h3>
-          <p class="font-medium">
-            Graph Theorist Sketchpad is a web application I developed for a graph theory class. The goal of the app was simply to sketch graphs, being any type (weighted, directed, self looping, complete, bipartite, etc). It was also a requirement to be able to view information about the graph, in the adjacency table and incidence matrix.  <br/><br/>
+      <div>
+        <h2 class="article-title">GRAPH THEORIST SKETCHPAD</h2>
+        <hr />
+        <div class="grid grid-cols-5 gap-4 mt-12 mx-8">
+          <div class="card col-span-3">
+            <h3 class="font-bold">About Graph Theorist Sketchpad</h3>
+            <p class="font-medium">
+              Graph Theorist Sketchpad is a web application I developed for a
+              graph theory class. The goal of the app was simply to sketch
+              graphs, being any type (weighted, directed, self looping,
+              complete, bipartite, etc). It was also a requirement to be able to
+              view information about the graph, in the adjacency table and
+              incidence matrix. <br /><br />
 
-            This application was made entirely in C using Raylib (an opengl wrapper) and Raygui (an immediate mode GUI for Raylib). Since the project required some advanced algorithms, I wanted to demonstrate the Bounding Volume Hierarchy algorithm for this project, and used that for collision detection.
-          </p>
-        </div>
-        <div class="card col-span-2">
-          <img src="assets/graph-sketchpad-1.png" alt="Graph Theorist Sketchpad" />
-        </div>
-        <div class="card col-span-4 row-span-3">
-          <h3 class="font-bold">Features</h3>
-          <div class="flex font-medium space-x-8">
-            <ul>
-              <li>Create vertices</li>
-              <li>Create edges</li>
-              <li>Create parallel edges</li>
-              <li>Move graphs</li>
-              <li>Directed graphs</li>
-              <li>Weighted graphs</li>
-              <li>Label vertices</li>
-              <li>Color vertices</li>
-              <li>View adjacency and incidence matrix</li>
-              <li>View the degree of a vertex</li>
-              <li>View the BVH tree of a graph</li>
-              <li>Run Kruskals MST on the graph</li>
-            </ul>
+              This application was made entirely in C using Raylib (an opengl
+              wrapper) and Raygui (an immediate mode GUI for Raylib). Since the
+              project required some advanced algorithms, I wanted to demonstrate
+              the Bounding Volume Hierarchy algorithm for this project, and used
+              that for collision detection.
+            </p>
+          </div>
+          <div class="col-span-2">
+            <img
+              src="assets/graph-sketchpad-1.png"
+              alt="Graph Theorist Sketchpad"
+            />
+          </div>
+          <div class="card col-span-2">
+            <h3 class="font-bold">Features</h3>
+            <div class="flex font-medium space-x-8">
+              <ul>
+                <li>Create vertices</li>
+                <li>Create edges</li>
+                <li>Create parallel edges</li>
+                <li>Move graphs</li>
+                <li>Directed graphs</li>
+                <li>Weighted graphs</li>
+              </ul>
+              <ul>
+                <li>Label vertices</li>
+                <li>Color vertices</li>
+                <li>View adjacency and incidence matrix</li>
+                <li>View the degree of a vertex</li>
+                <li>View the BVH tree of a graph</li>
+                <li>Run Kruskals MST on the graph</li>
+              </ul>
+            </div>
+          </div>
+          <div class="m-auto">
+            <span
+              class="iconify mx-auto"
+              data-icon="devicon:c"
+              data-inline="false"
+              style="font-size: 7rem"
+            ></span>
+            <h3 class="skill-header mt-5">Created in C</h3>
+          </div>
+          <div class="m-auto">
+            <img
+              src="assets/raylib.png"
+              alt="Raylib Logo"
+              class="mx-auto h-28"
+            />
+            <h3 class="skill-header mt-5">Rendered with Raylib</h3>
+          </div>
+          <div class="m-auto">
+            <a
+              href="https://github.com/bens-schreiber/virtual-packet-tracer"
+              target="_blank"
+            >
+              <span
+                class="iconify mx-auto"
+                data-icon="logos:github-icon"
+                data-inline="false"
+                style="font-size: 7rem"
+              ></span>
+              <h3 class="skill-header mt-5 underline">View on GitHub</h3>
+            </a>
           </div>
         </div>
-        <div class="card">
-          <span
-            class="iconify mx-auto"
-            data-icon="devicon:c"
-            data-inline="false"
-            style="font-size: 7rem"
-          ></span>
-          <h3 class="skill-header mt-5">Created in C</h3>
-        </div>
-        <div class="card">
-          <img src="assets/raylib.png" alt="Raylib Logo" class="mx-auto h-28" />
-          <h3 class="skill-header mt-5">Rendered with Raylib</h3>
-        </div>
-        <div class="card">
-          <a href="https://github.com/bens-schreiber/virtual-packet-tracer" target="_blank"> 
-            <span class="iconify mx-auto" data-icon="logos:github-icon" data-inline="false" style="font-size: 7rem"></span>
-            <h3 class="skill-header mt-5">View on GitHub</h3>
-          </a>
-        </div>
       </div>
 
-
+      <h2 class="text-3xl text-center font-medium mt-40">
+        View over 30 personal project repositories on
+        <a href="https://github.com/bens-schreiber/" class="underline"
+          >my GitHub</a
+        >
+      </h2>
     </article>
 
     <!-- Socials (again) -->
@@ -523,7 +638,12 @@
             target="_blank"
             class="flex items-center space-x-3"
           >
-            <span class="iconify" data-icon="logos:linkedin-icon" data-inline="false" style="font-size: 2rem"></span>
+            <span
+              class="iconify"
+              data-icon="logos:linkedin-icon"
+              data-inline="false"
+              style="font-size: 2rem"
+            ></span>
             <span>Benjamin Schreiber</span>
           </a>
         </li>
@@ -533,7 +653,12 @@
             target="_blank"
             class="flex items-center space-x-3"
           >
-            <span class="iconify" data-icon="logos:github-icon" data-inline="false" style="font-size: 2rem"></span>
+            <span
+              class="iconify"
+              data-icon="logos:github-icon"
+              data-inline="false"
+              style="font-size: 2rem"
+            ></span>
             <span>bens-schreiber</span>
           </a>
         </li>
@@ -543,7 +668,12 @@
             target="_blank"
             class="flex items-center space-x-3"
           >
-            <span class="iconify" data-icon="mdi:email" data-inline="false" style="font-size: 2rem"></span>
+            <span
+              class="iconify"
+              data-icon="mdi:email"
+              data-inline="false"
+              style="font-size: 2rem"
+            ></span>
             <span>bpschreiber2003@gmail.com</span>
           </a>
         </li>
@@ -551,4 +681,3 @@
     </footer>
   </body>
 </html>
-
