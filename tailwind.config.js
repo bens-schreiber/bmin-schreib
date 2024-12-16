@@ -1,15 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+module.exports = {
+  content: ["./public/**/*.{html,js}"],
+  darkMode: true,
   theme: {
     extend: {
       colors: {
-        "bg-primary": "#282c34",
-        "bg-secondary": "#2f333d",
-        "bg-tertiary": "#21252a",
-        "bg-accent": "#696d76",
-      }
-    }
+        background: "#fafafa",
+        primary: "#484b6a",
+        tertiary: "#21252a",
+        accent: "#696d76",
+      },
+    },
   },
-  plugins: []
+  plugins: [],
 };
