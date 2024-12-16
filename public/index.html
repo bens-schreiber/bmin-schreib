@@ -12,7 +12,9 @@
   <body>
     <!-- Nav bar -->
     <nav class="my-5 mx-10">
-      <ul class="flex space-x-7 justify-end font-medium bg-background">
+      <ul
+        class="flex space-x-7 justify-center md:justify-end font-medium bg-background"
+      >
         <li><a href="#">Home</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -20,14 +22,14 @@
     </nav>
 
     <!-- "Logo" -->
-    <div class="flex justify-center space-x-3 mt-16 mr-8">
-      <h1 class="font-bold text-9xl">
+    <div class="flex justify-center space-x-3 mt-12 md:mt-16 ml-5">
+      <h1 class="font-bold text-4xl md:text-9xl">
         <span class="text-dark"
           >bschr<span class="text-primary">:/resume$</span></span
         >
       </h1>
 
-      <svg class="w-16 h-[8rem]">
+      <svg class="w-4 h-[2.5rem] md:w-16 md:h-[8rem]">
         <rect id="blink" width="100%" height="100%" fill="#242934">
           <animate
             attributeName="fill"
@@ -42,7 +44,7 @@
     </div>
 
     <!-- Socials -->
-    <footer class="my-12">
+    <footer class="my-4 md:my-12">
       <ul class="flex justify-center space-x-12">
         <li>
           <a
@@ -56,7 +58,7 @@
               data-inline="false"
               style="font-size: 2rem"
             ></span>
-            <span>Benjamin Schreiber</span>
+            <span class="hidden sm:inline">Benjamin Schreiber</span>
           </a>
         </li>
         <li>
@@ -71,7 +73,7 @@
               data-inline="false"
               style="font-size: 2rem"
             ></span>
-            <span>bens-schreiber</span>
+            <span class="hidden sm:inline">bens-schreiber</span>
           </a>
         </li>
         <li>
@@ -86,18 +88,18 @@
               data-inline="false"
               style="font-size: 2rem"
             ></span>
-            <span>bpschreiber2003@gmail.com</span>
+            <span class="hidden sm:inline">bpschreiber2003@gmail.com</span>
           </a>
         </li>
       </ul>
     </footer>
 
     <!-- Resume -->
-    <article id="resume" class="article mt-32 relative">
+    <article id="resume" class="article mt-16 md:mt-32 relative">
       <div>
         <h2 class="article-title">EXPERIENCE</h2>
         <hr />
-        <div class="grid grid-cols-3 gap-4 mx-8 mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-3 mt-12">
           <div class="card">
             <img
               src="assets/intellitect.svg"
@@ -134,8 +136,8 @@
       <div>
         <h2 class="article-title mt-12">SKILLS</h2>
         <hr class="color-dark" />
-        <div class="grid grid-cols-6 gap-4 mt-12 mx-8">
-          <div class="m-auto">
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-8 mx-3 mt-12">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="vscode-icons:file-type-azure"
@@ -150,7 +152,7 @@
               <li>Blob Storage</li>
             </ul>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="devicon:csharp"
@@ -164,7 +166,7 @@
               <li>XUnit, Moq</li>
             </ul>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="vscode-icons:file-type-typescript-official"
@@ -178,7 +180,7 @@
               <li>WebRTC</li>
             </ul>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="vscode-icons:file-type-python"
@@ -192,7 +194,7 @@
               <li>Flask</li>
             </ul>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="logos:c"
@@ -205,7 +207,7 @@
               <li>RayLib</li>
             </ul>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="devicon:go-wordmark"
@@ -224,7 +226,7 @@
       <div>
         <h2 class="article-title mt-12">NOTABLE WORK</h2>
         <hr />
-        <div class="grid grid-cols-3 gap-4 mt-12 mx-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12 mx-3">
           <div class="card">
             <h3 class="font-bold">1ON1 Piano (IntelliTect, VPL LLC)</h3>
             <ul class="font-medium">
@@ -298,7 +300,7 @@
       <div>
         <h2 class="article-title mt-12">ACCOLADES</h2>
         <hr />
-        <div class="grid grid-cols-2 gap-4 mt-12 mx-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12 mx-3">
           <div class="card">
             <img src="assets/fbla.png" alt="FBLA Logo" class="mx-auto h-64" />
             <h3 class="font-medium">Future Business Leaders of America</h3>
@@ -324,14 +326,14 @@
     </article>
 
     <!-- "Logo" (again) -->
-    <div id="portfolio" class="text-center text-9xl">
+    <div id="portfolio" class="text-center text-4xl md:text-9xl">
       <div class="opacity-40">.</div>
       <div class="opacity-65">.</div>
       <div>.</div>
       <div class="font-bold mt-5">
         bschr<span class="text-primary">:/portfolio$</span>
 
-        <svg class="w-16 h-[8rem] inline">
+        <svg class="w-4 h-[2rem] mb-2 md:w-16 md:h-[8rem] inline">
           <rect id="blink" width="100%" height="100%" fill="#242934">
             <animate
               attributeName="fill"
@@ -347,12 +349,12 @@
     </div>
 
     <!-- Portfolio -->
-    <article class="article mt-32">
+    <article class="article mt-16 md:mt-32">
       <div>
         <h2 class="article-title">VIRTUAL PACKET TRACER</h2>
         <hr />
-        <div class="grid grid-cols-5 gap-4 mt-12 mx-8">
-          <div class="card col-span-3">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-12 mx-3">
+          <div class="card md:col-span-3">
             <h3 class="font-bold">About VPT</h3>
             <p class="font-medium">
               Virtual Packet Tracer is a network simulation tool I began as an
@@ -377,7 +379,7 @@
               network layer (ipv4).
             </p>
           </div>
-          <div class="card col-span-2">
+          <div class="card md:col-span-2">
             <h3 class="font-bold">Features</h3>
             <div class="flex font-medium space-x-8">
               <ul>
@@ -400,7 +402,7 @@
               </ul>
             </div>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="devicon:rust"
@@ -409,7 +411,7 @@
             ></span>
             <h3 class="skill-header mt-5">Created in Rust</h3>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <img
               src="assets/raylib.png"
               alt="Raylib Logo"
@@ -417,7 +419,7 @@
             />
             <h3 class="skill-header mt-5">Rendered with Raylib</h3>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <a
               href="https://github.com/bens-schreiber/virtual-packet-tracer"
               target="_blank"
@@ -445,8 +447,8 @@
       <div>
         <h2 class="article-title">THE PUSHAPP</h2>
         <hr />
-        <div class="grid grid-cols-5 gap-4 mt-12 mx-8">
-          <div class="card col-span-3">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-12 mx-3">
+          <div class="card md:col-span-3">
             <h3 class="font-bold">About PushApp</h3>
             <p class="font-medium">
               PushApp is a mobile application I developed for friends to play
@@ -464,7 +466,7 @@
               weeks.
             </p>
           </div>
-          <div class="card col-span-2">
+          <div class="card md:col-span-2">
             <h3 class="font-bold">Features</h3>
             <div class="flex font-medium space-x-8">
               <ul>
@@ -486,7 +488,7 @@
           <div class="row-span-2">
             <img src="assets/pushapp-1.png" alt="PushApp" />
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="logos:firebase"
@@ -495,7 +497,7 @@
             ></span>
             <h3 class="skill-header mt-5">Firebase Cloud Messaging</h3>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="logos:supabase-icon"
@@ -504,7 +506,7 @@
             ></span>
             <h3 class="skill-header mt-5">Supabase Backend</h3>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="logos:flutter"
@@ -513,7 +515,7 @@
             ></span>
             <h3 class="skill-header mt-5">Flutter Frontend w/ Riverpod</h3>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="logos:postgresql"
@@ -522,7 +524,7 @@
             ></span>
             <h3 class="skill-header mt-5">PostgreSQL Database</h3>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <a
               href="https://github.com/bens-schreiber/the_pushapp"
               target="_blank"
@@ -542,8 +544,8 @@
       <div>
         <h2 class="article-title">GRAPH THEORIST SKETCHPAD</h2>
         <hr />
-        <div class="grid grid-cols-5 gap-4 mt-12 mx-8">
-          <div class="card col-span-3">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-12 mx-3">
+          <div class="card md:col-span-3">
             <h3 class="font-bold">About Graph Theorist Sketchpad</h3>
             <p class="font-medium">
               Graph Theorist Sketchpad is a web application I developed for a
@@ -560,13 +562,13 @@
               that for collision detection.
             </p>
           </div>
-          <div class="col-span-2">
+          <div class="md:col-span-2">
             <img
               src="assets/graph-sketchpad-1.png"
               alt="Graph Theorist Sketchpad"
             />
           </div>
-          <div class="card col-span-2">
+          <div class="card md:col-span-2">
             <h3 class="font-bold">Features</h3>
             <div class="flex font-medium space-x-8">
               <ul>
@@ -587,7 +589,7 @@
               </ul>
             </div>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <span
               class="iconify mx-auto"
               data-icon="devicon:c"
@@ -596,7 +598,7 @@
             ></span>
             <h3 class="skill-header mt-5">Created in C</h3>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <img
               src="assets/raylib.png"
               alt="Raylib Logo"
@@ -604,7 +606,7 @@
             />
             <h3 class="skill-header mt-5">Rendered with Raylib</h3>
           </div>
-          <div class="m-auto">
+          <div class="card">
             <a
               href="https://github.com/bens-schreiber/virtual-packet-tracer"
               target="_blank"
@@ -630,7 +632,7 @@
     </article>
 
     <!-- Socials (again) -->
-    <footer class="my-12">
+    <footer class="my-4 md:my-12">
       <ul class="flex justify-center space-x-12">
         <li>
           <a
@@ -644,7 +646,7 @@
               data-inline="false"
               style="font-size: 2rem"
             ></span>
-            <span>Benjamin Schreiber</span>
+            <span class="hidden sm:inline">Benjamin Schreiber</span>
           </a>
         </li>
         <li>
@@ -659,7 +661,7 @@
               data-inline="false"
               style="font-size: 2rem"
             ></span>
-            <span>bens-schreiber</span>
+            <span class="hidden sm:inline">bens-schreiber</span>
           </a>
         </li>
         <li>
@@ -674,7 +676,7 @@
               data-inline="false"
               style="font-size: 2rem"
             ></span>
-            <span>bpschreiber2003@gmail.com</span>
+            <span class="hidden sm:inline">bpschreiber2003@gmail.com</span>
           </a>
         </li>
       </ul>
