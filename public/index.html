@@ -10,32 +10,33 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
   </head>
 
   <body class="bg-background">
-    <nav class="fixed right-0 top-0 bg-background">
-      <ul class="flex space-x-7 ml-auto pr-7 pt-4">
+    <nav class="absolute right-0 top-0">
+      <ul class="flex space-x-7 ml-auto bg-background mr-5 mt-5 font-medium">
         <li><a href="#">Home</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
       </ul>
     </nav>
-    <div style="height: 2rem"></div>
-    <!-- Roughly the nav size -->
 
     <!-- "Logo" -->
-    <div class="flex justify-center space-x-3 mt-8 mr-8">
-      <h1 class="font-bold text-8xl">
-        bschr<span class="text-primary">:/$</span>
+    <div class="flex justify-center space-x-3 mt-24 mr-8">
+      <h1 class="font-bold text-9xl">
+        <span class="text-dark"
+          >bschr<span class="text-primary">:/$</span></span
+        >
       </h1>
 
-      <svg class="w-12 h-[6rem]">
-        <rect id="blink" width="100%" height="100%" fill="#484b6a" />
+      <svg class="w-16 h-[8rem]">
+        <rect id="blink" width="100%" height="100%" fill="#242934" />
       </svg>
     </div>
 
     <!-- Socials -->
-    <footer class="mt-8">
+    <footer class="mt-12">
       <ul class="flex justify-center space-x-12">
         <li>
           <a
@@ -71,122 +72,239 @@
     </footer>
 
     <!-- Resume -->
-    <article id="resume" class="mt-16">
-      <h1 class="font-bold text-4xl mb-1 text-primary">~/resume</h1>
+    <article id="resume" class="mt-32">
+      <h2 class="article-title">EXPERIENCE</h1>
       <hr />
 
-      <h2 class="mt-12">Experience</h2>
-      <div class="grid grid-cols-3 gap-4 mx-12 mt-8">
-        <div class="rounded border p-5 mt-2 h-full">
-          <h3 class="font-medium">Work</h3>
-          <hr />
-          <ul class="mt-2">
-            <li>Software Developer Intern</li>
+      <!-- Experience -->
+      <div class="grid grid-cols-3 gap-4 mx-8 mt-12">
+        <div class="card">
+          <img
+            src="assets/intellitect.svg"
+            alt="IntelliTect Logo"
+            class="mx-auto mb-3"
+          />
+          <ul>
+            <li class="font-bold">IntelliTect</li>
+            <li class="font-medium">Software Developer Intern</li>
             <li>06/2022 - 08/2024</li>
           </ul>
         </div>
-        <div class="rounded border p-5 mt-2 h-full">
-          <h3 class="font-medium">University</h3>
-          <hr />
-          <ul class="mt-2">
-            <li>Washington State University - Pullman</li>
-            <li>Bachelors in Computer Science</li>
-            <li>Graduating May 2026</li>
+        <div class="card">
+          <img src="assets/wsu.svg" alt="WSU Logo" class="mx-auto h-28" />
+          <ul>
+            <li class="font-bold">Washington State University - Pullman</li>
+            <li class="font-medium">Bachelors in Computer Science</li>
+            <li class="font-medium">Graduating May 2026</li>
           </ul>
         </div>
-        <div class="rounded border p-5 mt-2 h-full">
-          <h3 class="font-medium">Relevant Coursework</h3>
+        <div class="card">
+          <h3 class="font-bold">Elected Coursework</h3>
           <hr />
-          <ul class="mt-2">
+          <ul class="font-medium">
             <li>CPTS 360 Systems Programming</li>
             <li>CPTS 350 Design & Analysis of Algorithms</li>
             <li>CPTS 451 Database Systems</li>
+            <li>CPTS 411 Parallel Programming</li>
             <li>MATH 453 Graph Theory</li>
           </ul>
         </div>
       </div>
 
-      <h2 class="mt-12">Skills</h2>
-      <div class="grid grid-cols-2 gap-4 mx-12">
-        <div class="rounded border p-5 mt-2 h-full">
-          <h3 class="font-medium">Languages</h3>
-          <hr />
-          <ul class="mt-2">
-            <li>C</li>
-            <li>Rust</li>
-            <li>Go</li>
-            <li>C#</li>
-            <li>Python</li>
-            <li>JavaScript / TypeScript / Dart</li>
-          </ul>
-        </div>
-
-        <div class="rounded border p-5 mt-2 h-full">
-          <h3 class="font-medium">Azure</h3>
-          <hr />
-          <ul class="mt-2">
+      <!-- Skills -->
+      <h2 class="article-title mt-12">SKILLS</h2>
+      <hr class="color-dark" />
+      <div class="grid grid-cols-6 gap-4 mt-12 mx-8">
+        <div class="card">
+          <span
+            class="iconify mx-auto"
+            data-icon="vscode-icons:file-type-azure"
+            data-inline="false"
+            style="font-size: 6rem"
+          ></span>
+          <h3 class="skill-header">Azure</h3>
+          <ul class="skill-items">
             <li>Web Apps</li>
-            <li>SqlServer</li>
+            <li>SQL Server</li>
             <li>SignalR</li>
             <li>Blob Storage</li>
           </ul>
         </div>
+        <div class="card">
+          <span
+            class="iconify mx-auto"
+            data-icon="devicon:csharp"
+            data-inline="false"
+            style="font-size: 6rem"
+          ></span>
+          <h3 class="skill-header">C#</h3>
+          <ul class="skill-items">
+            <li>ASP.NET</li>
+            <li>Entity Framework</li>
+            <li>XUnit, Moq</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span
+            class="iconify mx-auto"
+            data-icon="vscode-icons:file-type-typescript-official"
+            data-inline="false"
+            style="font-size: 6rem"
+          ></span>
+          <h3 class="skill-header">TypeScript</h3>
+          <ul class="skill-items">
+            <li>Vue.js</li>
+            <li>React.js</li>
+            <li>WebRTC</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span
+            class="iconify mx-auto"
+            data-icon="vscode-icons:file-type-python"
+            data-inline="false"
+            style="font-size: 6rem"
+          ></span>
+          <h3 class="skill-header">Python</h3>
+          <ul class="skill-items">
+            <li>Django</li>
+            <li>Pytest</li>
+            <li>Flask</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span
+            class="iconify mx-auto"
+            data-icon="logos:c"
+            data-inline="false"
+            style="font-size: 6rem"
+          ></span>
+          <h3 class="skill-header">C</h3>
+          <ul class="skill-items">
+            <li>Kernel Modules</li>
+            <li>RayLib</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span
+            class="iconify mx-auto"
+            data-icon="devicon:go-wordmark"
+            data-inline="false"
+            style="font-size: 6rem"
+          ></span>
+          <h3 class="skill-header">Golang</h3>
+          <ul class="skill-items">
+            <li>Gin</li>
+            <li>Gorm</li>
+          </ul>
+        </div>
       </div>
 
-      <h2 class="mt-12">Professional Work</h2>
-      <div class="grid grid-cols-3 gap-4 mx-12">
-        <div class="rounded border p-5 mt-2 h-full">
-          <h3 class="font-medium">1ON1 Piano (IntelliTect, VPL LLC)</h3>
-          <hr />
-          <ul class="mt-2">
-            <li>Recreated and upgraded a mobile app to facilitate piano lessons via MIDI, enhancing user experience by streamlining lesson delivery</li>
-            <li>Addressed WebRTC layer issues, reducing network related dropped calls by 90%</li>
-            <li>Spearheaded the implementation of a user File Sharing Library w/ Azure Blob storage</li>
+      <!-- Notable Work -->
+      <h2 class="article-title mt-12">NOTABLE WORK</h2>
+      <hr />
+
+      <div class="grid grid-cols-3 gap-4 mt-12 mx-8">
+        <div class="card">
+          <h3 class="font-bold">1ON1 Piano (IntelliTect, VPL LLC)</h3>
+          <ul class="font-medium">
+            <li>
+              Recreated and upgraded a mobile app to facilitate piano lessons
+              via MIDI, enhancing user experience by streamlining lesson
+              delivery
+            </li>
+            <br />
+            <li>
+              Addressed WebRTC layer issues, reducing network related dropped
+              calls by 90%
+            </li>
+            <br />
+            <li>
+              Spearheaded the implementation of a user File Sharing Library w/
+              Azure Blob storage
+            </li>
           </ul>
         </div>
-        <div class="rounded border p-5 mt-2 h-full">
-          <h3 class="font-medium">Audience Interactive Systems (IntelliTect, Spokane Symphony)</h3>
-          <hr />
-          <ul class="mt-2">
-            <li>Developed a concurrent voting system to synchronize end devices in real-time, utilizing Redis concurrent queues, enhancing user engagement and participation</li>
-            <li>Engineered a dynamic real-time word cloud, achieving seamless interaction for thousands of concurrent users</li>
-            <li>Implemented an algorithm for proportional word sizing in constant time, optimizing display efficiency and user experience in data visualization</li>
+        <div class="card">
+          <h3 class="font-bold">
+            Audience Interactive Systems (IntelliTect, Spokane Symphony)
+          </h3>
+          <ul class="font-medium">
+            <li>
+              Developed a concurrent voting system to synchronize end devices in
+              real-time, utilizing Redis concurrent queues, enhancing user
+              engagement and participation
+            </li>
+            <br />
+            <li>
+              Engineered a dynamic real-time word cloud, achieving seamless
+              interaction for thousands of concurrent users
+            </li>
+            <br />
+            <li>
+              Implemented an algorithm for proportional word sizing in constant
+              time, optimizing display efficiency and user experience in data
+              visualization
+            </li>
           </ul>
         </div>
-        <div class="rounded border p-5 mt-2 h-full">
-          <h3 class="font-medium">WSU Picol Database (IntelliTect, Washington State University CAHNRS College)</h3>
-          <hr />
-          <ul class="mt-2">
-            <li>Recreated a decade-old SQL database via reverse scaffolding, enhancing data integrity and access speed, significantly improving query performance.</li>
-            <li>Modernized an outdated .NET implementation, eliminating antipatterns and deprecated techniques, which increased system reliability and maintenance efficiency</li>
-            <li>Reengineered the front end to mirror a contemporary search engine, boosting user engagement and search efficiency</li>
+        <div class="card">
+          <h3 class="font-bold">
+            WSU Picol Database (IntelliTect, Washington State University CAHNRS
+            College)
+          </h3>
+          <ul class="font-medium">
+            <li>
+              Recreated a decade-old SQL database via reverse scaffolding,
+              enhancing data integrity and access speed, significantly improving
+              query performance.
+            </li>
+            <br />
+            <li>
+              Modernized an outdated .NET implementation, eliminating
+              antipatterns and deprecated techniques, which increased system
+              reliability and maintenance efficiency
+            </li>
+            <br />
+            <li>
+              Reengineered the front end to mirror a contemporary search engine,
+              boosting user engagement and search efficiency
+            </li>
           </ul>
         </div>
       </div>
 
-      <h2 class="mt-12">Accolades</h2>
-      <div class="grid grid-cols-2 gap-4 mx-12">
-        <div class="rounded border p-5 mt-2 h-full">
+      <!-- Accolades -->
+      <h2 class="article-title mt-12">ACCOLADES</h2>
+      <hr />
+      <div class="grid grid-cols-2 gap-4 mt-12 mx-8">
+        <div class="card">
+          <img src="assets/fbla.png" alt="FBLA Logo" class="mx-auto h-64" />
           <h3 class="font-medium">Future Business Leaders of America</h3>
-          <hr />
-          <ul class="mt-2">
+          <ul>
             <li>3rd Place, National - Coding and Programming (2021)</li>
             <li>1st Place, State - Website Design (2022)</li>
           </ul>
         </div>
-        <div class="rounded border p-5 mt-2 h-full">
-          <h3 class="font-medium">Triangle STEM Fraternity</h3>
-          <hr />
-          <ul class="mt-2">
-            <li>Chapter Founder, Vice President Internal (2022)</li> <!-- Rush Triangle! -->
+        <div class="card">
+          <img
+            src="assets/triangle.png"
+            alt="Triangle Logo"
+            class="mx-auto h-52"
+          />
+          <h3 class="font-medium mt-10">Triangle STEM Fraternity</h3>
+          <ul>
+            <li>Chapter Founder, Vice President Internal (2022)</li>
+            <!-- Rush Triangle! -->
           </ul>
         </div>
+      </div>
     </article>
 
     <!-- Portfolio -->
     <article id="portfolio" class="mt-16">
-      <h1 class="font-bold text-4xl mb-1 text-primary">~/portfolio</h1>
+      <h1 class="article-title">~/portfolio</h1>
       <hr />
-      </div>
+    </article>
   </body>
 </html>
