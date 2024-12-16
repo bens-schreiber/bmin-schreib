@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vite",
+    "build": "vite build",
+    "run": "vite preview",
     "dev": "vite",
     "build:css": "tailwindcss build -i public/tailwind.css -o public/styles.css"
   },
