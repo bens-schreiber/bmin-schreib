@@ -1,2 +1,2 @@
 # bschr
-Resume/portfolio [website](https://bmin-schreib.com)
+Resume/portfolio [website](https://bschr.dev)
